@@ -148,7 +148,7 @@
 
    <!-- Section Pengumuman dan Sambutan Kepala Sekolah -->
 <section id="pengumuman-dan-sambutan" class="py-25">
-  <div class="container">
+  <div class="container mt-5">
     <div class="row">
       
       <!-- Box Pengumuman -->

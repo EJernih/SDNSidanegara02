@@ -33,7 +33,7 @@
                  @error('image')
                 <small style="color: red">{{$message}}</small>   
                 @enderror
-                <img src="/image/{{$tendik->image}}" alt="" class="img-fluid">
+                <img src="/image/tendik/{{$tendik->image}}" alt="" class="img-fluid">
                 <div class="form-group">
                     <label for="">Gambar</label>
                     <input type="file" class="form-control" name="image">

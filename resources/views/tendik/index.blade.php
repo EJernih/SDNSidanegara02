@@ -35,11 +35,11 @@
                         <td>{{ $tendik->nama }}</td>
                         <td>{{ $tendik->pelajaran }}</td>
                         <td>
-                            <img src="/image/{{$tendik->image}}" alt="" class="img-fluid" width="90">
+                            <img src="/image/tendik/{{$tendik->image}}" alt="" class="img-fluid" width="90">
                         </td>
                         <td>
                             <a href="{{route('tendiks.edit', $tendik->id)}}" class="btn btn-warning">Edit</a>
-                            <form action="{{route('tendiks.destroy', $tendik->id)}}" class="btn btn-warning">Edit</a>method="POST" style="display:inline-block;">
+                            <form action="{{route('tendiks.destroy', $tendik->id)}}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Hapus</button>

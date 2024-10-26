@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SambutanController;
+use App\Http\Controllers\SarprasController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TendikController;
 use App\Http\Controllers\VisiMisiController;
@@ -44,3 +45,7 @@ Route::resource('sambutans', SambutanController::class)->middleware('auth');
 Route::resource('visimisis', VisiMisiController::class)->middleware('auth');
 
 Route::resource('tendiks', TendikController::class)->middleware('auth');
+
+Route::resource('sarprases', SarprasController::class)->middleware('auth');
+
+
