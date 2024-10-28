@@ -5,38 +5,49 @@
 @section('content')
 
 <div class="container">
-    <a href="/sarprases" class="btn btn-primary mb-3">Kembali</a>
+    <a href="/sarprasS" class="btn btn-primary mb-3">Kembali</a>
     <div class="row">
         <div class="col-md-12">
-            <form action="{{ route ('sarprases.update', $sarpras->id) }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route ('sarprasS.update', $sarpra->id) }}" method="POST" enctype="multipart/form-data">
                 @method('PUT')
                 @csrf
 
-                @error('title')
+                @error('judul')
                 <small style="color: red">{{$message}}</small>   
                 @enderror
 
                 <div class="form-group">
-                    <label for="title">Judul</label>
-                    <input type="text" class="form-control" name="title" id="title" placeholder="Judul" value="{{$sarpras->title}}">
+                    <label for="">Judul</label>
+                    <input type="text" class="form-control" name="judul" placeholder="Judul" value="{{$sarpra->judul}}">
+                </div>
+
+                @error('jumlah')
+                <small style="color: red">{{$message}}</small>   
+                @enderror
+
+                <div class="form-group">
+                    <label for="">Jumlah</label>
+                    <input type="text" class="form-control" name="jumlah" placeholder="Jumlah" value="{{$sarpra->jumlah}}">
                 </div>
                 
-                @error('description')
+                @error('deskripsi')
                 <small style="color: red">{{$message}}</small>   
                 @enderror
 
                 <div class="form-group">
-                    <label for="description">Deskripsi</label>
-                    <textarea name="description" id="description" cols="30" rows="10" class="form-control" placeholder="Deskripsi">{{$sarpras->description}}</textarea>
+                    <label for="">Deskripsi</label>
+                    <textarea name="deskripsi" id="" cols="30" rows="10" class="form-control" placeholder="Deskripsi">{{$sarpra->deskripsi}}</textarea>
                 </div>
                  
                  @error('image')
                 <small style="color: red">{{$message}}</small>   
                 @enderror
-                <img src="/image/sarpras/{{$sarpras->image}}" alt="" class="img-fluid">
+
+                <img src="/image/sarpras/{{$sarpra->image}}" alt="" class="img-fluid">
+
                 <div class="form-group">
-                    <label for="image">Gambar</label>
-                    <input type="file" class="form-control" name="image" id="image">
+                    <label for="">Gambar</label>
+                    <input type="file" class="form-control" name="image">
                 </div>
                 
                 <div class="form-group">

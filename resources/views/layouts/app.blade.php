@@ -107,7 +107,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/sarprases" class="nav-link">
+                <a href="/sarprasS" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Sarana Prasarana</p>
                 </a>
@@ -155,7 +155,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/sarprases" class="nav-link">
+                <a href="/sarprasS" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Sarana Prasarana</p>
                 </a>
@@ -203,7 +203,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{route('sarprases.index')}}" class="nav-link">
+                <a href="{{route('sarprasS.index')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Sarana Prasarana</p>
                 </a>
@@ -251,7 +251,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/sarprases" class="nav-link">
+                <a href="/sarprasS" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Sarana Prasarana</p>
                 </a>
@@ -299,7 +299,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/sarprases" class="nav-link">
+                <a href="/sarprasS" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Sarana Prasarana</p>
                 </a>

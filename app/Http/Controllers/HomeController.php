@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Slider;
 use App\Models\Sambutan;
 use App\Models\VisiMisi;
+use App\Models\Tendik;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -43,7 +44,8 @@ class HomeController extends Controller
 
     public function tendik()
     {
-        return view('home.tendik');
+        $tendiks = Tendik::all();
+        return view('home.tendik', compact('tendiks'));
     }
 
     public function visi_misi()

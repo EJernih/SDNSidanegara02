@@ -72,9 +72,6 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="siswa">Siswa-siswi</a>
-                </li>
-                <li>
                   <a class="dropdown-item" href="sarpras"
                     >Sarana dan Prasarana</a
                   >
@@ -127,134 +124,80 @@
      <div class="teams bg-light py-5">
             <div class="container">
                 <div class="title-container">
-                    <h2 class="text-center fw-bold">Testimonial</h2>
+                    <h2 class="text-center fw-bold">Prestasi Terbaru</h2>
                 </div>
-                <p class="text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed corrupti ipsa molestias sint! Laudantium eum provident possimus quisquam sit cupiditate laborum quaerat asperiores doloribus? Pariatur possimus enim quod distinctio?</p>
                 <div class="row mt-5">
-                    <div class="col-md-6 mt-4" data-aos="fade-right">
-                        <div class="card border-0 shadow shadow-sm ">
-                            <div class="card-body testimonial-item p-5">
-                                <img src="assets/img/a1.jpg" alt="" class="img-testimonial float-start rounded-circle me-3">
-                                <strong class="d-block">Ema Wow</strong>
-                                <smal class="text-muted">CEO & Founder</smal>
-                                <p class="fst-italic mt-3 fs-5">
-                                    <i class="fa fa-quote-left"></i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore consequuntur reiciendis provident animi?
-                                <i class="fa fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4" data-aos="fade-left">
-                        <div class="card border-0 shadow shadow-sm ">
-                            <div class="card-body testimonial-item p-5">
-                                <img src="assets/img/a1.jpg" alt="" class="img-testimonial float-start rounded-circle me-3">
-                                <strong class="d-block">Ema Wow</strong>
-                                <smal class="text-muted">CEO & Founder</smal>
-                                <p class="fst-italic mt-3 fs-5">
-                                    <i class="fa fa-quote-left"></i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore consequuntur reiciendis provident animi?
-                                <i class="fa fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4" data-aos="fade-right">
-                        <div class="card border-0 shadow shadow-sm ">
-                            <div class="card-body testimonial-item p-5">
-                                <img src="assets/img/a1.jpg" alt="" class="img-testimonial float-start rounded-circle me-3">
-                                <strong class="d-block">Ema Wow</strong>
-                                <smal class="text-muted">CEO & Founder</smal>
-                                <p class="fst-italic mt-3 fs-5">
-                                    <i class="fa fa-quote-left"></i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore consequuntur reiciendis provident animi?
-                                <i class="fa fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4" data-aos="fade-left">
-                        <div class="card border-0 shadow shadow-sm ">
-                            <div class="card-body testimonial-item p-5">
-                                <img src="assets/img/a1.jpg" alt="" class="img-testimonial float-start rounded-circle me-3">
-                                <strong class="d-block">Ema Wow</strong>
-                                <smal class="text-muted">CEO & Founder</smal>
-                                <p class="fst-italic mt-3 fs-5">
-                                    <i class="fa fa-quote-left"></i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore consequuntur reiciendis provident animi?
-                                <i class="fa fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-      </div>
-     <!-- end teams -->
-
-
-     <!-- teams -->
-     <div class="teams bg-light py-5">
-            <div class="container">
-                <div class="title-container">
-                    <h2 class="text-center fw-bold">Testimonial</h2>
-                </div>
-                <p class="text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed corrupti ipsa molestias sint! Laudantium eum provident possimus quisquam sit cupiditate laborum quaerat asperiores doloribus? Pariatur possimus enim quod distinctio?</p>
-                <div class="row mt-5">
-                    <div class="col-md-12" data-aos="fade-right">
+                    
+                  <div class="col-md-12" data-aos="fade-right">
 <div class="card border-0 shadow shadow-sm mb-3">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="assets/img/g14.jpg" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <hr>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-      </div>
+<div class="row g-0">
+  <div class="col-md-4">
+    <img src="assets/img/g14.jpg" class="img-fluid rounded-start" alt="...">
+  </div>
+  <div class="col-md-8">
+    <div class="card-body">
+      <h5 class="card-title">JUARA I MAPSI SE KABUPATEN CILACAP</h5>
+      <p class="card-text "><i class="fa-solid fa-calendar-days me-3"></i>12 Agustus 2024</p>
+      <hr>
+      <p class="card-text"><small class="text-body-secondary">Amanda Rawles meraih piala best actrees of the year 2021 di acara MAPSI SE Kabupaten Cilacap</small></p>
     </div>
   </div>
 </div>
-                    </div>
-                    <div class="col-md-6 mt-4" data-aos="fade-left">
-                        <div class="card border-0 shadow shadow-sm ">
-                            <div class="card-body testimonial-item p-5">
-                                <img src="assets/img/a1.jpg" alt="" class="img-testimonial float-start rounded-circle me-3">
-                                <strong class="d-block">Ema Wow</strong>
-                                <smal class="text-muted">CEO & Founder</smal>
-                                <p class="fst-italic mt-3 fs-5">
-                                    <i class="fa fa-quote-left"></i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore consequuntur reiciendis provident animi?
-                                <i class="fa fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4" data-aos="fade-right">
-                        <div class="card border-0 shadow shadow-sm ">
-                            <div class="card-body testimonial-item p-5">
-                                <img src="assets/img/a1.jpg" alt="" class="img-testimonial float-start rounded-circle me-3">
-                                <strong class="d-block">Ema Wow</strong>
-                                <smal class="text-muted">CEO & Founder</smal>
-                                <p class="fst-italic mt-3 fs-5">
-                                    <i class="fa fa-quote-left"></i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore consequuntur reiciendis provident animi?
-                                <i class="fa fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4" data-aos="fade-left">
-                        <div class="card border-0 shadow shadow-sm ">
-                            <div class="card-body testimonial-item p-5">
-                                <img src="assets/img/a1.jpg" alt="" class="img-testimonial float-start rounded-circle me-3">
-                                <strong class="d-block">Ema Wow</strong>
-                                <smal class="text-muted">CEO & Founder</smal>
-                                <p class="fst-italic mt-3 fs-5">
-                                    <i class="fa fa-quote-left"></i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore consequuntur reiciendis provident animi?
-                                <i class="fa fa-quote-right"></i></p>
-                            </div>
-                        </div>
+</div>
+                  <div class="col-md-12" data-aos="fade-left">
+<div class="card border-0 shadow shadow-sm mb-3">
+<div class="row g-0">
+  <div class="col-md-4">
+    <img src="assets/img/g14.jpg" class="img-fluid rounded-start" alt="...">
+  </div>
+  <div class="col-md-8">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <hr>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</div>
+                  <div class="col-md-12" data-aos="fade-right">
+<div class="card border-0 shadow shadow-sm mb-3">
+<div class="row g-0">
+  <div class="col-md-4">
+    <img src="assets/img/g14.jpg" class="img-fluid rounded-start" alt="...">
+  </div>
+  <div class="col-md-8">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <hr>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</div>
+                  <div class="col-md-12" data-aos="fade-left">
+<div class="card border-0 shadow shadow-sm mb-3">
+<div class="row g-0">
+  <div class="col-md-4">
+    <img src="assets/img/g14.jpg" class="img-fluid rounded-start" alt="...">
+  </div>
+  <div class="col-md-8">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <hr>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</div>
                     </div>
                 </div>
             </div>
+      </div>
+      </div>
+      </div>
       </div>
      <!-- end teams -->
 

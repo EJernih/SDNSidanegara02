@@ -3,7 +3,9 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PrestasiController;
 use App\Http\Controllers\SambutanController;
+use App\Http\Controllers\SarPraController;
 use App\Http\Controllers\SarprasController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TendikController;
@@ -46,6 +48,10 @@ Route::resource('visimisis', VisiMisiController::class)->middleware('auth');
 
 Route::resource('tendiks', TendikController::class)->middleware('auth');
 
-Route::resource('sarprases', SarprasController::class)->middleware('auth');
+Route::resource('sarprasS', SarpraController::class)->middleware('auth');
 
+Route::resource('prestasis', PrestasiController::class)->middleware('auth');
+
+Route::get('ekskul', function () {
+    return redirect('/#ekskul');});
 

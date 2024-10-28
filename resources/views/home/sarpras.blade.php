@@ -72,9 +72,6 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="siswa">Siswa-siswi</a>
-                </li>
-                <li>
                   <a class="dropdown-item" href="sarpras"
                     >Sarana dan Prasarana</a
                   >
@@ -134,7 +131,7 @@
                     <div class="col-md-6 mt-4" data-aos="fade-right">
                         <div class="card border-0 shadow shadow-sm ">
                             <div class="card-body testimonial-item p-5">
-                                <img src="assets/img/s1.jpg" alt="" class="img-testimonial float-start rounded-circle me-3">
+                                <img src="assets/img/s1.jpg" alt="" class="img-testimonial float-start me-3">
                                 <strong class="d-block">Ruang Kelas</strong>
                                 <smal class="text-muted">CEO & Founder</smal>
                                 <p class="fst-italic mt-3 fs-5">
@@ -147,7 +144,7 @@
                     <div class="col-md-6 mt-4" data-aos="fade-left">
                         <div class="card border-0 shadow shadow-sm ">
                             <div class="card-body testimonial-item p-5">
-                                <img src="assets/img/s2.jpg" alt="" class="img-testimonial float-start rounded-circle me-3">
+                                <img src="assets/img/s2.jpg" alt="" class="img-testimonial float-start me-3">
                                 <strong class="d-block">Perpustakaan</strong>
                                 <smal class="text-muted">CEO & Founder</smal>
                                 <p class="fst-italic mt-3 fs-5">
@@ -160,7 +157,7 @@
                     <div class="col-md-6 mt-4" data-aos="fade-right">
                         <div class="card border-0 shadow shadow-sm ">
                             <div class="card-body testimonial-item p-5">
-                                <img src="assets/img/s3.webp" alt="" class="img-testimonial float-start rounded-circle me-3">
+                                <img src="assets/img/s3.webp" alt="" class="img-testimonial float-start me-3">
                                 <strong class="d-block">Mushola</strong>
                                 <smal class="text-muted">CEO & Founder</smal>
                                 <p class="fst-italic mt-3 fs-5">
@@ -173,7 +170,7 @@
                     <div class="col-md-6 mt-4" data-aos="fade-left">
                         <div class="card border-0 shadow shadow-sm ">
                             <div class="card-body testimonial-item p-5">
-                                <img src="assets/img/s4.jpg" alt="" class="img-testimonial float-start rounded-circle me-3">
+                                <img src="assets/img/s4.jpg" alt="" class="img-testimonial float-start me-3">
                                 <strong class="d-block">Toilet</strong>
                                 <smal class="text-muted">CEO & Founder</smal>
                                 <p class="fst-italic mt-3 fs-5">

@@ -5,28 +5,37 @@
 @section('content')
 
 <div class="container">
-    <a href="/sarprases" class="btn btn-primary mb-3">Kembali</a>
+    <a href="/sarprasS" class="btn btn-primary mb-3">Kembali</a>
     <div class="row">
         <div class="col-md-12">
-            <form action="{{ route ('sarprases.store') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route ('sarprasS.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
 
-                @error('title')
+                @error('judul')
                 <small style="color: red">{{$message}}</small>   
                 @enderror
 
                 <div class="form-group">
                     <label for="">Judul</label>
-                    <input type="text" class="form-control" name="title" placeholder="Judul">
+                    <input type="text" class="form-control" name="judul" placeholder="Judul">
+                </div>
+
+                @error('jumlah')
+                <small style="color: red">{{$message}}</small>   
+                @enderror
+
+                <div class="form-group">
+                    <label for="">Jumlah</label>
+                    <input type="text" class="form-control" name="jumlah" placeholder="Jumlah">
                 </div>
                 
-                @error('description')
+                @error('deskripsi')
                 <small style="color: red">{{$message}}</small>   
                 @enderror
 
                 <div class="form-group">
                     <label for="">Deskripsi</label>
-                    <textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Deskripsi"></textarea>
+                    <textarea name="deskripsi" id="" cols="30" rows="10" class="form-control" placeholder="Deskripsi"></textarea>
                 </div>
                  
                  @error('image')

@@ -82,9 +82,6 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="siswa">Siswa-siswi</a>
-                </li>
-                <li>
                   <a class="dropdown-item" href="sarpras"
                     >Sarana dan Prasarana</a
                   >
@@ -261,7 +258,7 @@
 
 
     <!-- Ekskul -->
-    <div class="Ekskul mt-5 bg-light py-5">
+    <div id="ekskul" class="Ekskul mt-5 bg-light py-5">
       <div class="container">
         <div class="title-container text-center">
           <h2 class="fw-bold">Ekstrakulikuler</h2>
@@ -283,8 +280,7 @@
                   <a href="ekskul.html" style="text-decoration: none; color: inherit;">Drumband</a>
                 </div>
                 <p class="card-description mt-3">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Placeat nihil facere eligendi quam quo repellendus.
+                  Pembimbing: Dyah Surya Nur Wibi
                 </p>
               </div>
             </div>
@@ -297,8 +293,7 @@
                 </div>
                 <div class="card-title fw-bolder mt-4">Pramuka</div>
                 <p class="card-description mt-3">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Placeat nihil facere eligendi quam quo repellendus.
+                  Pembimbing: Dyah Surya Nur Wibi
                 </p>
               </div>
             </div>
@@ -307,12 +302,11 @@
             <div class="card border-0 text-center p-4 mt-3" data-aos="zoom-in">
               <div class="card-body">
                 <div class="card-icon">
-                  <i class="fa-solid fa-book fa-3x"></i>
+        <i class="fa-solid fa-music fa-3x"></i>
                 </div>
-                <div class="card-title fw-bolder mt-4">Lorem Ipsum</div>
+                <div class="card-title fw-bolder mt-4">Seni Vokal</div>
                 <p class="card-description mt-3">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Placeat nihil facere eligendi quam quo repellendus.
+                  Pembimbing: Dyah Surya Nur Wibi
                 </p>
               </div>
             </div>
@@ -321,9 +315,9 @@
             <div class="card border-0 text-center p-4 mt-3" data-aos="zoom-in">
               <div class="card-body">
                 <div class="card-icon">
-                  <i class="fa-solid fa-book fa-3x"></i>
+                  <i class="fa-solid fa-palette fa-3x"></i>
                 </div>
-                <div class="card-title fw-bolder mt-4">Lorem Ipsum</div>
+                <div class="card-title fw-bolder mt-4">Seni Lukis</div>
                 <p class="card-description mt-3">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Placeat nihil facere eligendi quam quo repellendus.

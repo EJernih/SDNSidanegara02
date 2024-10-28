@@ -72,9 +72,6 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="siswa">Siswa-siswi</a>
-                </li>
-                <li>
                   <a class="dropdown-item" href="sarpras"
                     >Sarana dan Prasarana</a
                   >
@@ -203,7 +200,7 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-3">
-              <h4 class="fw-bold">COMPANY</h2>
+              <h4 class="fw-bold">SD Negeri Sidanegara 02</h2>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
                 facilis optio eos vitae, soluta nulla officia explicabo quidem.
@@ -219,31 +216,31 @@
                 <li class="list-item">
                   <a href="" class="text-decoration-none text-black">
                     <i class="fa-solid fa-chevron-right primary"></i>
-                    Web Development
+                    Profil
                   </a>
                 </li>
                 <li class="list-item">
                   <a href="" class="text-decoration-none text-black">
                     <i class="fa-solid fa-chevron-right primary"></i>
-                    Web Design
+                    PPDB
                   </a>
                 </li>
                 <li class="list-item">
                   <a href="" class="text-decoration-none text-black">
                     <i class="fa-solid fa-chevron-right primary"></i>
-                    Online Marketing
+                    Galeri
                   </a>
                 </li>
                 <li class="list-item">
                   <a href="" class="text-decoration-none text-black">
                     <i class="fa-solid fa-chevron-right primary"></i>
-                    Graphic Designer
+                    Berita
                   </a>
                 </li>
                 <li class="list-item">
                   <a href="" class="text-decoration-none text-black">
                     <i class="fa-solid fa-chevron-right primary"></i>
-                    Photography
+                    Kontak
                   </a>
                 </li>
               </ul>
@@ -300,24 +297,8 @@
                   Subscribe
                 </button>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-down bg-darker text-white px-5 py-3">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                   <div class="copyright">
-                      &copy; Copyright <strong>Company</strong>. All Rights Reseved
-                    </div>
-                    <div class="credits">
-                        Designed by Jerniiihh
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="social-links float-end">
+              <div class="col-md-5"></div>
+                    <div class="social-links mt-3">
                         <a href="" class="mx-2">
                             <i class="fab fa-facebook fa-2x"></i>
                         </a>
@@ -336,12 +317,29 @@
                     </div>
                 </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-down bg-darker text-white px-5 py-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                   <div class="copyright">
+                      &copy; Copyright <strong>Company</strong>. All Rights Reseved
+                    </div>
+                    <div class="credits">
+                        Designed by Jerniiihh
+                    </div>
+                </div>
+            </div>
         </div>
         
       </div>
     </footer>
 
-   <!-- top -->
+    <!-- end footer -->
+    
     <a href="#" class="btn-to-top p-3">
         <i class="fa fa-chevron-up"></i>
     </a>

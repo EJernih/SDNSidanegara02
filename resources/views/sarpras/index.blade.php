@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-    <a href="/sarprases/create" class="btn btn-primary mb-3">Tambah Data</a>
+    <a href="/sarprasS/create" class="btn btn-primary mb-3">Tambah Data</a>
     
     @if ($message = Session::get('message'))
       <div class="alert alert-success">
@@ -20,6 +20,7 @@
                 <tr>
                     <th>No</th>
                     <th>Judul</th>
+                    <th>Jumlah</th>
                     <th>Deskripsi</th>
                     <th>Gambar</th>
                     <th>Aksi</th>
@@ -29,17 +30,18 @@
                 @php
                     $i = 1
                 @endphp
-                @foreach ($sarpra->sortBy('id') as $sarpras)  {{-- Ubah sortByDescending menjadi sortBy --}}
+                @foreach ($sarpras->sortBy('id') as $sarpra)  {{-- Ubah sortByDescending menjadi sortBy --}}
                     <tr>
                         <td>{{ $i++ }}</td>
-                        <td>{{ $sarpras->title }}</td>
-                        <td>{{ $sarpras->description }}</td>
+                        <td>{{ $sarpra->judul }}</td>
+                        <td>{{ $sarpra->jumlah }}</td>
+                        <td>{{ $sarpra->deskripsi }}</td>
                         <td>
-                            <img src="/image/sarpras/{{$sarpras->image}}" alt="" class="img-fluid" width="90">
+                            <img src="/image/sarpras/{{$sarpra->image}}" alt="" class="img-fluid" width="90">
                         </td>
                         <td>
-                            <a href="{{route('sarprases.edit', $sarpras->id)}}" class="btn btn-warning">Edit</a>
-                            <form action="{{route('sarprases.destroy', $sarpras->id)}}" method="POST" style="display:inline-block;">
+                            <a href="{{route('sarprasS.edit', $sarpra->id)}}" class="btn btn-warning">Edit</a>
+                            <form action="{{route('sarprasS.destroy', $sarpra->id)}}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Hapus</button>

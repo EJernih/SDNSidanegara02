@@ -72,9 +72,6 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="siswa">Siswa-siswi</a>
-                </li>
-                <li>
                   <a class="dropdown-item" href="sarpras">Sarana dan Prasarana</a
                   >
                 </li>
