@@ -63,6 +63,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <!-- Menu Dashboard -->
           <li class="nav-item">
             <a href="/dashboard" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -71,6 +72,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </p>
             </a>
           </li>
+              <!-- Menu Lihat Website -->
           <li class="nav-item">
             <a href="/" target="_blank" class="nav-link">
               <i class="nav-icon fa-solid fa-arrow-up-right-from-square"></i>
@@ -79,6 +81,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </p>
             </a>
           </li>
+              <!-- Menu Halaman Beranda -->
           <li class="nav-item menu-close">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
@@ -95,27 +98,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/galeris" class="nav-link">
+                <a href="/pengumumans" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Data Galeri</p>
+                  <p>Data Pengumuman</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/tendiks" class="nav-link">
+                <a href="/singkats" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Data Tenaga Pendidik</p>
+                  <p>Data Sambutan Singkat</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/sarprasS" class="nav-link">
+                <a href="/beritas" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Data Sarana Prasarana</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/prestasis" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Prestasi</p>
+                  <p>Data Berita</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -124,9 +121,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <p>Data Ekstrakulikuler</p>
                 </a>
               </li>
-              
+              <li class="nav-item">
+                <a href="/galeris" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Data Galeri</p>
+                </a>
+              </li>
             </ul>
           </li>
+              <!-- Menu Halaman Profil -->
           <li class="nav-item menu-close">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
@@ -175,150 +178,26 @@ scratch. This page gets rid of all links and provides the needed markup only.
               
             </ul>
           </li>
+              <!-- Menu Halaman PPDB -->
           <li class="nav-item menu-close">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Halaman Beranda
+                Halaman PPDB
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/sliders" class="nav-link">
+                <a href="/ppdbs" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Data Sliders</p>
+                  <p>Data PPDB</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="/galeris" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Galeri</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/tendiks" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Tenaga Pendidik</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{route('sarprasS.index')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Sarana Prasarana</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/prestasis" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Prestasi</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/ekskuls" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Ekstrakulikuler</p>
-                </a>
-              </li>
-              
             </ul>
           </li>
-          <li class="nav-item menu-close">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Halaman Beranda
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/sliders" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Sliders</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/galeris" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Galeri</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/tendiks" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Tenaga Pendidik</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/sarprasS" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Sarana Prasarana</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/prestasis" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Prestasi</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/ekskuls" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Ekstrakulikuler</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>
-          <li class="nav-item menu-close">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Halaman Beranda
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/sliders" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Sliders</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/galeris" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Galeri</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/tendiks" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Tenaga Pendidik</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/sarprasS" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Sarana Prasarana</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/prestasis" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Prestasi</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/ekskuls" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Ekstrakulikuler</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>
+
+
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fa-solid fa-user"></i>

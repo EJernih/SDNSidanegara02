@@ -108,7 +108,7 @@
      <div class="breadcumbs py-2">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center text-white">
-                <h2>PPDB</h2>
+                <h5>PPDB</h5>
                 <ol class="d-flex list-unstyled">
                     <li>Beranda</li>
                     <li>PPDB</li>
@@ -119,103 +119,71 @@
      <!-- end breadcumbs -->
 
 
-     <!-- ppdb -->
+        <!-- ppdb -->
 
-    <div class="profil mt-5">
-      <div class="container">
-        <div class="title-container">
-          <h2 class="text-center fw-bold">PROFIL</h2>
-        </div>
-
-        <div class="row mt-5">
-           <div class="col-md-6 d-flex align-items-center" data-aos="fade-right">
-             <img src="/assets/img/a4.png" alt="" class="img-fluid max-height-50" />
-          </div>
-          <div class="col-md-6" data-aos="fade-left">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Dignissimos aut ducimus sit cupiditate totam, aliquam modi ipsam
-              ratione eaque obcaecati perferendis magnam consectetur at.
-              Cupiditate, quam. Laudantium, animi voluptas? Dolor.
-            </p>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <i class="fa-solid fa-check-double primary"></i>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                repudiandae autem repellat ducimus fugiat delectus quasi
-                molestiae?
-              </li>
-              <li class="list-group-item">
-                <i class="fa-solid fa-check-double primary"></i>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                repudiandae autem repellat ducimus fugiat delectus quasi
-                molestiae?
-              </li>
-              <li class="list-group-item">
-                <i class="fa-solid fa-check-double primary"></i>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                repudiandae autem repellat ducimus fugiat delectus quasi
-                molestiae?
-              </li>
-              <li class="list-group-item">
-                <i class="fa-solid fa-check-double primary"></i>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                repudiandae autem repellat ducimus fugiat delectus quasi
-                molestiae?
-              </li>
-            </ul>
-            <p class="mt-2">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Temporibus molestiae reprehenderit modi quos maxime quo totam
-              asperiores corrupti soluta pariatur quibusdam, nesciunt a aliquam.
-              Magnam, atque aperiam? Neque, magni commodi.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-            <div class="container mt-5">
-            <div class="row">
-            <div class="col-md-12">
-                <div class="card border-0 shadow shadow-sm">
-                </div>
-                </div>
-                </div>
-                <div class="row mt-5">
-                <div class="col-md-12">
-                    <div class="card border-0 shadow">
-                        <div class="card-body p-4">
-                            <div class="row mt-4">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="your name">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="your email">
-                                </div>
-                            </div>
-                            <div class="row mt-4">
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" placeholder="subject">
-                                </div>
-                            </div>
-                            <div class="row mt-4">
-                                <div class="col-md-12">
-                                    <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="your message"></textarea>
-                                </div>
-                            </div>
-                            <div class="row mt-4">
-                                <button type="submit" class="btn btn-submit">send message</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="profil mt-5">
+          <div class="container">
+            <div class="title-container">
+              <h2 class="text-center fw-bold">Penerimaan Peserta Didik Baru 2024/2025</h2>
             </div>
+
+            <div class="row mt-5">
+                <div class="col-md-6 d-flex align-items-center" data-aos="fade-right">
+                  <img src="/assets/img/a5.jpeg" alt="" class="img-fluid max-height-50" />
+              </div>
+              <div class="col-md-6" data-aos="fade-left">
+                <p>
+                  SD Negeri Sidanegara 02 Cilacap membuka pendaftaran peserta didik baru. 
+                  Silahkan Bapak/Ibu yang berkenan untuk mendaftarkan Putra/Putri nya Pada  :
+                </p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex align-items-start">
+                    <i class="fa-solid fa-calendar-days primary me-3"></i>
+                    <div class="d-flex flex-column">
+                      <div class="d-flex">
+                        <span>Tanggal</span>
+                        <span class="ms-auto">: 21 Januari - 4 Juli 204</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-start">
+                    <i class="fa-solid fa-school primary me-3"></i>
+                    <div class="d-flex flex-column">
+                      <div class="d-flex">
+                        <span>Tempat</span>
+                        <span class="ms-auto">: SD Negeri Sidanegara 02 Cilacap Tengah</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-start">
+                    <i class="fa-solid fa-key primary me-3"></i>
+                    <div class="d-flex flex-column">
+                      <div class="d-flex">
+                        <span>Syarat Pendaftaran</span>
+                        <span class="ms-auto">:</span>
+                      </div>
+                    <ol class="ms-3">
+                      <li>akdk</li>
+                      <li>akdk</li>
+                      <li>akdk</li>
+                    </ol>
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-item-start">
+                    <div class="d-flex flex-column">
+
+                    </div>
+                  </li>
+                </ul>
+                <div class="row-mt-4">
+                  <button type="submit" class="btn btn-submit">Daftar Sekarang</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-
-     <!-- end ppdb -->
+        <!-- end ppdb -->
 
 
 

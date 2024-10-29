@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PpdbController;
 use App\Http\Controllers\PrestasiController;
 use App\Http\Controllers\SambutanController;
 use App\Http\Controllers\SarPraController;
@@ -54,4 +55,6 @@ Route::resource('prestasis', PrestasiController::class)->middleware('auth');
 
 Route::get('ekskul', function () {
     return redirect('/#ekskul');});
+
+Route::resource('ppdbs', PpdbController::class)->middleware('auth');
 

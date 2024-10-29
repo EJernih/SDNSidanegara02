@@ -274,6 +274,34 @@
             <div class="card border-0 text-center p-4 mt-3" data-aos="zoom-in">
               <div class="card-body">
                 <div class="card-icon">
+                  <i class="fa-solid fa-book-quran fa-3x"></i>
+                </div>
+                <div class="card-title fw-bolder mt-4">BTQ</div>
+                <p class="card-description mt-3">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Placeat nihil facere eligendi quam quo repellendus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 text-center p-4 mt-3" data-aos="zoom-in">
+              <div class="card-body">
+                <div class="card-icon">
+                  <i class="fa-solid fa-golf-ball-tee fa-3x"></i>
+                </div>
+                <div class="card-title fw-bolder mt-4">Bulutangkis</div>
+                <p class="card-description mt-3">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Placeat nihil facere eligendi quam quo repellendus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 text-center p-4 mt-3" data-aos="zoom-in">
+              <div class="card-body">
+                <div class="card-icon">
                   <i class="fa-solid fa-drum fa-3x"></i>
                 </div>
                 <div class="card-title fw-bolder mt-4">
@@ -329,23 +357,9 @@
             <div class="card border-0 text-center p-4 mt-3" data-aos="zoom-in">
               <div class="card-body">
                 <div class="card-icon">
-                  <i class="fa-solid fa-book fa-3x"></i>
+                  <i class="fa-solid fa-table-tennis-paddle-ball fa-3x"></i>
                 </div>
-                <div class="card-title fw-bolder mt-4">Lorem Ipsum</div>
-                <p class="card-description mt-3">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Placeat nihil facere eligendi quam quo repellendus.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border-0 text-center p-4 mt-3" data-aos="zoom-in">
-              <div class="card-body">
-                <div class="card-icon">
-                  <i class="fa-solid fa-book fa-3x"></i>
-                </div>
-                <div class="card-title fw-bolder mt-4">Lorem Ipsum</div>
+                <div class="card-title fw-bolder mt-4">Tenis</div>
                 <p class="card-description mt-3">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Placeat nihil facere eligendi quam quo repellendus.
