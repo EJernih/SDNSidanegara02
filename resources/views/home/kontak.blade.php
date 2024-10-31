@@ -136,22 +136,25 @@
                     <div class="card-body">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-4">
-                                    <i class="fa fa-map-marker-alt fa-2x primary float-start me-4"></i>
-                                    <h4 class="fw-bolder">lokasi</h4>
-                                    <p class="ms-5">Jl. Argopuro No.425, Tambaksari, Sidanegara, Kec. Cilacap Tengah, Kabupaten Cilacap, Jawa Tengah 53223, Indonesia</p>
-                                </div> 
-                                <div class="col-md-4">
-                                    <i class="fa fa-envelope fa-2x primary float-start me-4"></i>
-                                    <h4 class="fw-bolder">Email</h4>
-                                    <p class="ms-5">sdnsid02.cilteng@gmail.com</p>
-                                </div> 
-                                <div class="col-md-4">
-                                    <i class="fa fa-phone fa-2x primary float-start me-4"></i>
-                                    <h4 class="fw-bolder">telp</h4>
-                                    <p class="ms-5">Jl. Argopuro No.425, Tambaksari, Sidanegara, Kec. Cilacap Tengah, Kabupaten Cilacap, Jawa Tengah 53223, Indonesia</p>
-                                </div> 
-                            </div>
+                              @foreach ($kontaks as $kontak)
+                                  
+                              <div class="col-md-4">
+                                  <i class="fa fa-map-marker-alt fa-2x primary float-start me-4"></i>
+                                  <h4 class="fw-bolder">lokasi</h4>
+                                  <p class="ms-5">{{ $kontak->address }}</p>
+                              </div> 
+                              <div class="col-md-4">
+                                  <i class="fa fa-envelope fa-2x primary float-start me-4"></i>
+                                  <h4 class="fw-bolder">Email</h4>
+                                  <p class="ms-5">{{ $kontak->email }}</p>
+                              </div> 
+                              <div class="col-md-4">
+                                  <i class="fa fa-phone fa-2x primary float-start me-4"></i>
+                                  <h4 class="fw-bolder">telp</h4>
+                                  <p class="ms-5">{{ $kontak->phone }}</p>
+                              </div> 
+                          </div>
+                              @endforeach
                         </div>
                     </div>
                 </div>

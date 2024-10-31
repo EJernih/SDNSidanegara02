@@ -119,60 +119,31 @@
      <!-- end breadcumbs -->
 
 
-         <!-- Berita -->
-    <div class="Berita mt-5 bg-light py-5">
-      <div class="container">
+        <!-- Berita -->
+<div class="Berita mt-5 bg-light py-5">
+    <div class="container">
         <div class="title-container text-center">
-          <h2 class="fw-bold">Berita</h2>
+            <h2 class="fw-bold">Berita</h2>
         </div>
         
-        <div class="row mt-5">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row mt-5 row-cols-1 row-cols-md-3 g-4">
+            @foreach ($beritas as $berita)
             <div class="col">
-              <div class="card">
-                <img src="assets/img/b2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <a href="berita.html">Read More <i class="fa-solid fa-greater-than"></i></a>
+                <div class="card">
+                    <img src="{{ asset('image/berita/' . $berita->image) }}" class="card-img-top" alt="{{ $berita->title }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $berita->title }}</h5>
+                        <p class="card-text">{{ $berita->description }}</p>
+                        <a href="#">Read More <i class="fa-solid fa-greater-than"></i></a>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col">
-              <div class="card">
-                <img src="assets/img/b5.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <a href="berita.html">Read More <i class="fa-solid fa-greater-than"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="assets/img/b7.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                  <a href="berita.html">Read More <i class="fa-solid fa-greater-than"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="assets/img/b1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <a href="berita.html">Read More <i class="fa-solid fa-greater-than"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+            @endforeach
         </div>
-      </div>
     </div>
-    <!-- end Berita -->
+</div>
+<!-- end Berita -->
+
 
 
 

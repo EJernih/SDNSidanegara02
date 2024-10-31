@@ -64,15 +64,15 @@ class KontakController extends Controller
     {
          $request->validate([
             'phone' => 'required',
-            'email' => 'required',
-            'address' => 'required|email',
+            'email' => 'required|email',
+            'address' => 'required',
         ]);
 
                 $input = $request->all();
 
         $kontak->update($input);
 
-        return redirect('/galeris')->with('message', 'Data berhasil diedit');
+        return redirect('/kontaks')->with('message', 'Data berhasil diedit');
     }
 
     /**
@@ -82,6 +82,6 @@ class KontakController extends Controller
     {
         $kontak->delete();
 
-        return redirect('/kon$kontaks')->with('message', 'Data berhasil dihapus');
+        return redirect('/kontaks')->with('message', 'Data berhasil dihapus');
     }
 }

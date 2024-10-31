@@ -33,7 +33,7 @@
                     <tr>
                         <td>{{ $i++ }}</td>
                         <td>{{ $berita->title }}</td>
-                        <td>{{ $berita->description }}</td>
+                        <td>{{ Str::limit($berita->description, 25) }}</td>
                         <td>
                             <img src="/image/berita/{{$berita->image}}" alt="" class="img-fluid" width="90">
                         </td>

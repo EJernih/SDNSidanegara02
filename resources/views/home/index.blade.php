@@ -186,7 +186,7 @@
             <p><em>Assalamu‘alaikum Wr. Wb.</em></p>
             <p>
               Segala puji hanya untuk Allah SWT dan shalawat serta salam semoga tercurah atas nabi Muhammad SAW, begitu pula atas keluarga, para sahabat, dan para pengikutnya. Alhamdulillahi robbil alamin, kami panjatkan kehadirat Tuhan Allah SWT...
-              <a href="tentang_sekolah.html">Read More <i class="fa-solid fa-angles-right"></i></a>
+              <a href="tentang_sekolah">Read More <i class="fa-solid fa-angles-right"></i></a>
             </p>
           </div>
         </div>

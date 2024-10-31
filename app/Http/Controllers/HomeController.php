@@ -2,8 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Berita;
+use App\Models\Galeri;
+use App\Models\Kontak;
+use App\Models\Ppdb;
+use App\Models\Prestasi;
 use App\Models\Slider;
 use App\Models\Sambutan;
+use App\Models\Sarpra;
 use App\Models\VisiMisi;
 use App\Models\Tendik;
 use Illuminate\Http\Request;
@@ -24,22 +30,30 @@ class HomeController extends Controller
 
     public function galeri()
     {
-        return view('home.galeri');
+        $galeris = Galeri::all();
+        $filters = Galeri::select('filter as item')->distinct()->get();
+
+        return view('home.galeri', compact('galeris','filters'));
     }
 
     public function kontak()
     {
-        return view('home.kontak');
+        $kontaks = Kontak::all();
+
+        return view('home.kontak', compact('kontaks'));
     }
 
     public function ppdb()
     {
-        return view('home.ppdb');
+        $ppdbs = Ppdb::all();
+
+        return view('home.ppdb', compact('ppdbs'));
     }
 
     public function prestasi()
     {
-        return view('home.prestasi');
+        $prestasis = Prestasi::all();
+        return view('home.prestasi', compact('prestasis'));
     }
 
     public function tendik()
@@ -57,12 +71,16 @@ class HomeController extends Controller
 
     public function sarpras()
     {
-        return view('home.sarpras');
+        $sarpras = Sarpra::all();
+
+        return view('home.sarpras', compact('sarpras'));
     }
 
     public function berita()
     {
-        return view('home.berita');
+        $beritas = Berita::all();
+
+        return view('home.berita', compact('beritas'));
     }
 }           
     

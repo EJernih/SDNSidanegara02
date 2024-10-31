@@ -130,40 +130,26 @@
           <div class="col-md-12 d-flex justify-content-center">
             <ul class="list-unstyled d-flex galeri-filters">
               <li data-filter="*" class="py-2 px-4 filter-active text-white">ALL</li>
-              <li data-filter=".filter-ekstrakulikuler" class="py-2 px-4">Ekstrakulikuler</li>
-              <li data-filter=".filter-potrait" class="py-2 px-4">Potrait</li>
-              <li data-filter=".filter-kegiatan_sekolah" class="py-2 px-4">Kegiatan Sekolah</li>
+
+              @foreach ($filters as $filter)
+              <li data-filter=".filter-{{$filter->item}}" class="py-2 px-4">
+                {{ucfirst($filter->item)}}
+              </li>
+              @endforeach
             </ul>
           </div>
         </div>
+
         <div class="row mt-5">
           <div class="col-md-12">
             <div class="mansory galeri-container">
               <div class="mansory-sizer"></div>
-              <div class="mansory-item m-2 galeri-item filter-kegiatan_sekolah">
-                <img src="/assets/img/b1.jpg" alt="" class="img-fluid" />
+              @foreach ($galeris as $galeri)
+                  
+              <div class="mansory-item m-2 galeri-item filter-{{ $galeri->item }}">
+                <img src="{{ asset('image/galeri/'. $galeri->image) }}" alt="{{$galeri->title}}" class="img-fluid" />
               </div>
-              <div class="mansory-item m-2 galeri-item filter-potrait">
-                <img src="/assets/img/b2.jpg" alt="" class="img-fluid" />
-              </div>
-              <div class="mansory-item m-2 galeri-item filter-ekstrakulikuler">
-                <img src="/assets/img/b3.jpg" alt="" class="img-fluid" />
-              </div>
-              <div class="mansory-item m-2 galeri-item filter-ekstrakulikuler">
-                <img src="/assets/img/b4.jpg" alt="" class="img-fluid" />
-              </div>
-              <div class="mansory-item m-2 galeri-item filter-potrait">
-                <img src="/assets/img/b5.jpg" alt="" class="img-fluid" />
-              </div>
-              <div class="mansory-item m-2 galeri-item filter-kegiatan_sekolah">
-                <img src="/assets/img/b6.jpg" alt="" class="img-fluid" />
-              </div>
-              <div class="mansory-item m-2 galeri-item filter-ekstrakulikuler">
-                <img src="/assets/img/b7.jpg" alt="" class="img-fluid" />
-              </div>
-              <div class="mansory-item m-2 galeri-item filter-ekstrakulikuler">
-                <img src="/assets/img/b8.jpg" alt="" class="img-fluid" />
-              </div>
+              @endforeach
              
             </div>
           </div>

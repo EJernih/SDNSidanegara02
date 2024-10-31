@@ -120,70 +120,35 @@
 
 
 
-     <!-- teams -->
+     <!-- sarpras -->
      <div class="teams bg-light py-5">
             <div class="container">
                 <div class="title-container">
                     <h2 class="text-center fw-bold">Fasilitas</h2>
                 </div>
                 <p class="text-center mt-4">Sarana adalah perlengkapan pembelajaran yang dapat dipindah-pindah. Prasarana adalah fasilitas dasar untuk menjalankan fungsi sekolah/madrasah.</p>
+
                 <div class="row mt-5">
-                    <div class="col-md-6 mt-4" data-aos="fade-right">
-                        <div class="card border-0 shadow shadow-sm ">
-                            <div class="card-body testimonial-item p-5">
-                                <img src="assets/img/s1.jpg" alt="" class="img-testimonial float-start me-3">
-                                <strong class="d-block">Ruang Kelas</strong>
-                                <smal class="text-muted">CEO & Founder</smal>
-                                <p class="fst-italic mt-3 fs-5">
-                                    <i class="fa fa-quote-left"></i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore consequuntur reiciendis provident animi?
-                                <i class="fa fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4" data-aos="fade-left">
-                        <div class="card border-0 shadow shadow-sm ">
-                            <div class="card-body testimonial-item p-5">
-                                <img src="assets/img/s2.jpg" alt="" class="img-testimonial float-start me-3">
-                                <strong class="d-block">Perpustakaan</strong>
-                                <smal class="text-muted">CEO & Founder</smal>
-                                <p class="fst-italic mt-3 fs-5">
-                                    <i class="fa fa-quote-left"></i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore consequuntur reiciendis provident animi?
-                                <i class="fa fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4" data-aos="fade-right">
-                        <div class="card border-0 shadow shadow-sm ">
-                            <div class="card-body testimonial-item p-5">
-                                <img src="assets/img/s3.webp" alt="" class="img-testimonial float-start me-3">
-                                <strong class="d-block">Mushola</strong>
-                                <smal class="text-muted">CEO & Founder</smal>
-                                <p class="fst-italic mt-3 fs-5">
-                                    <i class="fa fa-quote-left"></i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore consequuntur reiciendis provident animi?
-                                <i class="fa fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4" data-aos="fade-left">
-                        <div class="card border-0 shadow shadow-sm ">
-                            <div class="card-body testimonial-item p-5">
-                                <img src="assets/img/s4.jpg" alt="" class="img-testimonial float-start me-3">
-                                <strong class="d-block">Toilet</strong>
-                                <smal class="text-muted">CEO & Founder</smal>
-                                <p class="fst-italic mt-3 fs-5">
-                                    <i class="fa fa-quote-left"></i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore consequuntur reiciendis provident animi?
-                                <i class="fa fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  @foreach ($sarpras as $sarpra)
+                      
+                  <div class="col-md-6 mt-4" data-aos="fade-right">
+                      <div class="card border-0 shadow shadow-sm ">
+                          <div class="card-body testimonial-item p-5">
+                              <img src="{{asset('image/sarpras/'. $sarpra->image)}}" alt="{{ $sarpra->name }}" class="img-testimonial float-start me-3">
+                              <strong class="d-block">{{ $sarpra->judul }} {{ $sarpra->name }}</strong>
+                              <smal class="text-muted">{{ $sarpra->jumlah }}</smal>
+                              <p class="fst-italic mt-3 fs-5">
+                                  <i class="fa fa-quote-left"></i>
+                                  {{ $sarpra->deskripsi }}
+                              <i class="fa fa-quote-right"></i></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                  @endforeach
             </div>
       </div>
-     <!-- end teams -->
+     <!-- end sarpras -->
 
 
 

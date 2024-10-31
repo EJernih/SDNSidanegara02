@@ -123,18 +123,23 @@
 
         <div class="profil mt-5">
           <div class="container">
+                          @foreach ($ppdbs as $ppdb)
             <div class="title-container">
-              <h2 class="text-center fw-bold">Penerimaan Peserta Didik Baru 2024/2025</h2>
+              <h2 class="text-center fw-bold">{{ $ppdb->title }}</h2>
             </div>
 
             <div class="row mt-5">
+
+
+                  
+
+
                 <div class="col-md-6 d-flex align-items-center" data-aos="fade-right">
-                  <img src="/assets/img/a5.jpeg" alt="" class="img-fluid max-height-50" />
+                  <img src="{{ asset('image/ppdb/'. $ppdb->image) }}" alt="{{ $ppdb->name }}" class="img-fluid max-height-50" />
               </div>
               <div class="col-md-6" data-aos="fade-left">
                 <p>
-                  SD Negeri Sidanegara 02 Cilacap membuka pendaftaran peserta didik baru. 
-                  Silahkan Bapak/Ibu yang berkenan untuk mendaftarkan Putra/Putri nya Pada  :
+                  {{ $ppdb->description }}
                 </p>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item d-flex align-items-start">
@@ -142,7 +147,7 @@
                     <div class="d-flex flex-column">
                       <div class="d-flex">
                         <span>Tanggal</span>
-                        <span class="ms-auto">: 21 Januari - 4 Juli 204</span>
+                        <span class="ms-auto">: {{ $ppdb->start_date }} - {{ $ppdb->end_date }}</span>
                       </div>
                     </div>
                   </li>
@@ -151,7 +156,7 @@
                     <div class="d-flex flex-column">
                       <div class="d-flex">
                         <span>Tempat</span>
-                        <span class="ms-auto">: SD Negeri Sidanegara 02 Cilacap Tengah</span>
+                        <span class="ms-auto">: {{ $ppdb->place }}</span>
                       </div>
                     </div>
                   </li>
@@ -163,12 +168,14 @@
                         <span class="ms-auto">:</span>
                       </div>
                     <ol class="ms-3">
-                      <li>akdk</li>
-                      <li>akdk</li>
-                      <li>akdk</li>
+                      <li>{{$ppdb->sk_1}}</li>
+                      <li>{{ $ppdb->sk_2 }}</li>
+                      <li>{{ $ppdb->sk_3 }}</li>
+                      <li>{{ $ppdb->sk_4 }}</li>
                     </ol>
                     </div>
                   </li>
+                                @endforeach
                   <li class="list-group-item d-flex align-item-start">
                     <div class="d-flex flex-column">
 

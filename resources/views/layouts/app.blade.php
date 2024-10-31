@@ -16,7 +16,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Theme style -->
   <link rel="stylesheet" href="/lte/dist/css/adminlte.min.css">
   <!-- Tambahkan link Bootstrap CDN jika belum ada -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">

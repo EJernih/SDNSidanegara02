@@ -43,6 +43,7 @@
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Hapus</button>
                             </form>
+                            <a href="{{ route('kontaks.show', $contact->id) }}">View</a>
                         </td>
                     </tr>
                 @endforeach
