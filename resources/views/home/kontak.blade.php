@@ -122,8 +122,12 @@
      <!-- kontak -->
       <div class="kontak mb-5">
         <div class="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253135.84941637795!2d108.91857521402127!3d-7.547951044954103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e651296921182f7%3A0xa6f9bc5b83c53588!2sSD%20Negeri%20Sidanegara%2002!5e0!3m2!1sid!2sat&z=80!4v1724764459598!5m2!1sid!2sat" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.2068857319077!2d109.01405690049492!3d-7.7201063496835935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e651296921182f7%3A0xa6f9bc5b83c53588!2sSD%20Negeri%20Sidanegara%2002!5e0!3m2!1sid!2sid!4v1730296521762!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+  </div>
+
+
 
         <div class="container mt-5">
             <div class="row">

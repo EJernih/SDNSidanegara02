@@ -1,8 +1,12 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FilterController;
+use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\KontakController;
 use App\Http\Controllers\PpdbController;
 use App\Http\Controllers\PrestasiController;
 use App\Http\Controllers\SambutanController;
@@ -57,4 +61,11 @@ Route::get('ekskul', function () {
     return redirect('/#ekskul');});
 
 Route::resource('ppdbs', PpdbController::class)->middleware('auth');
+
+Route::resource('galeris', GaleriController::class)->middleware('auth');
+Route::resource('filters', FilterController::class)->middleware('auth');
+
+Route::resource('beritas', BeritaController::class)->middleware('auth');
+
+Route::resource('kontaks', KontakController::class);
 

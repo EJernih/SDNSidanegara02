@@ -196,6 +196,67 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>
             </ul>
           </li>
+              <!-- Menu Halaman Galeri -->
+          <li class="nav-item menu-close">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Halaman Galeri
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/galeris" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Data Galeri</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/filters" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Data Filter</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+              <!-- Menu Halaman Berita -->
+          <li class="nav-item menu-close">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Halaman Berita
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/beritas" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Data Berita</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+              <!-- Menu Halaman Kontak -->
+          <li class="nav-item menu-close">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Halaman Kontak
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/kontaks" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Data Kontak</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
 
 
           <li class="nav-item">
