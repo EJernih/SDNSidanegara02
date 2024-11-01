@@ -82,5 +82,12 @@ class HomeController extends Controller
 
         return view('home.berita', compact('beritas'));
     }
+
+    public function berita_detail($id)
+    {
+        $berita = Berita::find($id);
+
+        return view('home.detailberita', compact('berita'));
+    }
 }           
     
