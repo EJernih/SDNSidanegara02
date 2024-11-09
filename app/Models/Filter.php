@@ -12,4 +12,11 @@ class Filter extends Model
     protected $fillable = [
         'filter'
     ];
+
+
+    //relasi ke tabel galeri
+    public function galeris()
+    {
+        return $this->hasMany(Galeri::class);
+    }
 }

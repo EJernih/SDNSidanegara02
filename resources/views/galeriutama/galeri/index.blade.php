@@ -33,7 +33,7 @@
                     <tr>
                         <td>{{ $i++ }}</td>
                         <td>{{ $galeri->title }}</td>
-                        <td>{{ $galeri->filter }}</td>
+                        <td>{{ $galeri->filter->filter }}</td> {{-- Menampilkan nama filter dari relasi galeri ke filter --}}
                         <td>
                             <img src="/image/galeri/{{$galeri->image}}" alt="" class="img-fluid" width="90">
                         </td>

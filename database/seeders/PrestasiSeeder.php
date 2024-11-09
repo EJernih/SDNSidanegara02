@@ -18,9 +18,9 @@ class PrestasiSeeder extends Seeder
             'title' => 'Juara 1 Lomba Basket Bola',
             'date' => '2021-05-10',
             'description' => 'Juara 1 Lomba Basket Bola di SMK Telkom Bandung',
-            'image' => 'assets/img/t4.jpg',
-            'created_at' => '2021-05-10 00:00:00',
-            'updated_at' => '2021-05-10 00:00:00',
+            'image' => 'prestasi_20241031115117ZoIb2LA5.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
     }
 }

@@ -14,9 +14,11 @@ return new class extends Migration
         Schema::create('galeris', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('filter');
+            $table->unsignedBigInteger('filter_id');
             $table->string('image');
             $table->timestamps();
+
+            $table->foreign('filter_id')->references('id')->on('filters')->onDelete('cascade');
         });
     }
 

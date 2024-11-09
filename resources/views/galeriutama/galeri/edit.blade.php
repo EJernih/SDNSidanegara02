@@ -21,16 +21,21 @@
                     <input type="text" class="form-control" name="title" placeholder="Judul" value="{{$galeri->title}}">
                 </div>
                 
+                {{-- edit Filter --}}
                 <div class="form-group">
                     <label for="filter">Filter</label>
-                    <select name="filter" id="filter" class="form-control" aria-placeholder="Pilih Filter">
-                        <option selected disabled>Pilih Filter</option>
-                        @foreach ($filters as $item)
-                            <option value="{{ $item->filter }}" {{ $galeri->filter == $item->filter ? 'selected' : '' }}>
-                                {{ $item->filter }}
+                    <select class="form-control" id="filter_id" name="filter_id">
+                        <option value="">Pilih Filter</option>
+                        @foreach($filters as $filter)
+                            <option value="{{ $filter->id }}" 
+                                    {{ $galeri->filter_id == $filter->id ? 'selected' : '' }}>
+                                    {{ $filter->filter }}
                             </option>
                         @endforeach
                     </select>
+                    @error('filter_id')
+                        <small style="color: red">{{ $message }}</small>
+                    @enderror
                 </div>
 
                  

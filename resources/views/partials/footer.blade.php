@@ -67,40 +67,25 @@
                 <li class="list-item">
                   <a href="" class="text-decoration-none text-black">
                     <i class="fa-solid fa-chevron-right primary"></i>
-                    Service
+                    UPT Damkar Cilacap
                   </a>
                 </li>
                 <li class="list-item">
                   <a href="" class="text-decoration-none text-black">
                     <i class="fa-solid fa-chevron-right primary"></i>
-                    Portofolio
+                    Bank Gunung Slamet
                   </a>
                 </li>
                 <li class="list-item">
                   <a href="" class="text-decoration-none text-black">
                     <i class="fa-solid fa-chevron-right primary"></i>
-                    Contact
+                    Sami Laris
                   </a>
                 </li>
               </ul>
             </div>
             <div class="col-md-3">
-              <h4 class="fw-bold">Join Our Newsletter</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="yourmail@example.com"
-                />
-                <button
-                  class="btn btn-subscribe"
-                  type="button"
-                  id="inputGroupFileAddon04"
-                >
-                  Subscribe
-                </button>
-              </div>
+              <h4 class="fw-bold">Sosial Media Kami</h2>
               <div class="col-md-5"></div>
                     <div class="social-links mt-3">
                         <a href="" class="mx-2">

@@ -9,9 +9,18 @@ class Galeri extends Model
 {
     use HasFactory;
 
+    protected $table = 'galeris';
+
     protected $fillable = [
         'title',
-        'filter',
+        'filter_id',
         'image'
     ];
+
+
+    //relasi ke filter
+    public function filter()
+    {
+        return $this->belongsTo(Filter::class);
+    }
 }

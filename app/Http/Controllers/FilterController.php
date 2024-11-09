@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Filter;
+use App\Models\Galeri;
 use Illuminate\Http\Request;
 
 class FilterController extends Controller
@@ -12,8 +13,9 @@ class FilterController extends Controller
      */
     public function index()
     {
+        $galeris = Galeri::with('filter')->get();
         $filters = Filter::all();
-        return view('galeriutama.filter.index', compact('filters'));
+        return view('galeriutama.filter.index', compact('filters', 'galeris'));
     }
 
     /**

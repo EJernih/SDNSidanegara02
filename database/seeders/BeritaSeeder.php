@@ -17,7 +17,7 @@ class BeritaSeeder extends Seeder
             'id' => 7,
             'title' => 'sang',
             'description' => 'ini adalah berita sang',
-            'image' => 'assets/img/c1.jpg',
+            'image' => 'berita_20241030112641dRa3Ovva.jpg',
             'created_at' => '2021-10-10 10:00:00',
             'updated_at' => '2021-10-10 10:00:00',
         ]);

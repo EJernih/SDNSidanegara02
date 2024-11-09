@@ -59,8 +59,8 @@
               <li data-filter="*" class="py-2 px-4 filter-active text-white">ALL</li>
 
               @foreach ($filters as $filter)
-              <li data-filter=".filter-{{$filter->item}}" class="py-2 px-4">
-                {{ucfirst($filter->item)}}
+              <li data-filter=".filter-{{$filter->filter}}" class="py-2 px-4">
+                {{ucfirst($filter->filter)}}
               </li>
               @endforeach
             </ul>
@@ -73,7 +73,7 @@
               <div class="mansory-sizer"></div>
               @foreach ($galeris as $galeri)
                   
-              <div class="mansory-item m-2 galeri-item filter-{{ $galeri->item }}">
+              <div class="mansory-item m-2 galeri-item filter-{{ $galeri->title }}">
                 <img src="{{ asset('image/galeri/'. $galeri->image) }}" alt="{{$galeri->title}}" class="img-fluid" />
               </div>
               @endforeach

@@ -16,8 +16,8 @@ class GaleriSeeder extends Seeder
         Galeri::create([
             'id'=> 7,
             'title' => 'Galeri 1',
-            'filter' => 'potrait',
-            'image' => 'assets/img/b7.jpg',
+            'filter_id' => 1,
+            'image' => 'galeri_202410310431031wNPqhFG.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);

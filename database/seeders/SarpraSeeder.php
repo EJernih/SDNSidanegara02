@@ -18,7 +18,7 @@ class SarpraSeeder extends Seeder
             'judul' =>'wc',
             'jumlah' => 10,
             'deskripsi' =>'Deskripsi Sarpra 8',
-            'image' => 'assets/img/g13.jpg',
+            'image' => 'sarpras_20241031143346lECz0eP7.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);

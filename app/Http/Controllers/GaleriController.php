@@ -14,8 +14,9 @@ class GaleriController extends Controller
      */
     public function index()
     {
-        $galeris = Galeri::all();
-        return view('galeriutama.galeri.index', compact('galeris'));
+        $galeris = Galeri::with('filter')->get();
+        $filters = Filter::all();
+        return view('galeriutama.galeri.index', compact('galeris', 'filters'));
     }
 
     /**
@@ -26,7 +27,6 @@ class GaleriController extends Controller
         $filters = Filter::all();
         return view('galeriutama.galeri.create', compact('filters'));
 
-        return view('galeriutama.galeri.create');
     }
 
     /**
@@ -37,7 +37,7 @@ class GaleriController extends Controller
 
         $request->validate([
             'title' => 'required',
-            'filter' => 'required',
+            'filter_id' => 'required|integer',
             'image' => 'required|image',
         ]);
 
@@ -68,6 +68,7 @@ class GaleriController extends Controller
      */
     public function edit(Galeri $galeri)
     {
+        $galeris = Galeri::all();
         $filters = Filter::all();
 
         return view('galeriutama.galeri.edit', compact('galeri', 'filters'));
@@ -80,7 +81,7 @@ class GaleriController extends Controller
     {
          $request->validate([
             'title' => 'required',
-            'filter' => 'required',
+            'filter_id' => 'required',
             'image' => 'image',
         ]);
 

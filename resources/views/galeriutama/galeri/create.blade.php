@@ -20,18 +20,20 @@
                     <input type="text" class="form-control" name="title" placeholder="Judul">
                 </div>
                 
-                @error('filter')
-                <small style="color: red">{{$message}}</small>   
-                @enderror
-
+                {{--  Filter --}}
                 <div class="form-group">
-                    <label for="filter">Filter</label>
-                    <select name="filter" id="filter" class="form-control" aria-placeholder="Pilih Filter">
-                        <option selected disabled>Pilih Filter</option>
-                        @foreach ($filters as $item)
-                            <option value="{{ $item->filter }}">{{ $item->filter }}</option>
+                    <label for="filter_id">Filter</label>
+                    <select class="form-control" id="filter_id" name="filter_id">
+                        <option value="">Pilih Filter</option>
+                        @foreach($filters as $filter)
+                            <option value="{{ $filter->id }}" >
+                                {{ $filter->filter }}
+                            </option>
                         @endforeach
                     </select>
+                    @error('filter_id')
+                        <small style="color: red">{{ $message }}</small>
+                    @enderror
                 </div>
                  
                  @error('image')
