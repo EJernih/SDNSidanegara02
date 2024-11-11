@@ -31,7 +31,7 @@ class HomeController extends Controller
     public function galeri()
     {
         $galeris = Galeri::all();
-        $filters = Galeri::select('filter as item')->distinct()->get();
+        $filters = Galeri::select('filter_id as item')->distinct()->get();
 
         return view('home.galeri', compact('galeris','filters'));
     }

@@ -20,6 +20,18 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>SDN02CLP</title>
+
+    <style>
+        .container-sarpras {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .sarpras-item {
+            width: 50%;
+        }
+    </style>
   </head>
 
   <body>
@@ -54,12 +66,11 @@
                 </div>
                 <p class="text-center mt-4">Sarana adalah perlengkapan pembelajaran yang dapat dipindah-pindah. Prasarana adalah fasilitas dasar untuk menjalankan fungsi sekolah/madrasah.</p>
 
-                <div class="row mt-5">
+                <div class="mt-5 container-sarpras">
                   @foreach ($sarpras as $sarpra)
-                      
-                  <div class="col-md-6 mt-4" data-aos="fade-right">
-                      <div class="card border-0 shadow shadow-sm ">
-                          <div class="card-body testimonial-item p-5">
+                  <div class="mt-4 sarpras-item" data-aos="fade-right">
+                      <div class="card border-0 shadow">
+                          <div class="card-body testimonial-item">
                               <img src="{{asset('image/sarpras/'. $sarpra->image)}}" alt="{{ $sarpra->name }}" class="img-testimonial float-start me-3">
                               <strong class="d-block">{{ $sarpra->judul }} {{ $sarpra->name }}</strong>
                               <smal class="text-muted">{{ $sarpra->jumlah }}</smal>
@@ -70,8 +81,8 @@
                           </div>
                       </div>
                   </div>
-              </div>
                   @endforeach
+              </div>
             </div>
       </div>
      <!-- end sarpras -->
