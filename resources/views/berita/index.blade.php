@@ -53,4 +53,16 @@
     </div>
 </div>
     
+ <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            new EasyMDE({ element: document.querySelector("textarea[name='description']") });
+        });
+    </script>
+    
+
+@endsection
+
+@section('head')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
 @endsection

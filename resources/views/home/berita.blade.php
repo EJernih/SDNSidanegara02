@@ -60,7 +60,7 @@
                     <img src="{{ asset('image/berita/' . $berita->image) }}" class="card-img-top" alt="{{ $berita->title }}">
                     <div class="card-body">
                         <h5 class="card-title">{{ $berita->title }}</h5>
-                        <p class="card-text">{{ Str::limit($berita->description, 100, '...') }}</p>
+                        <p class="card-text">{!! Markdown::convertToHtml(Str::limit($berita->description, 100)) !!}</p>
                         <a href="/detailberita/{{ $berita->id }}">Read More <i class="fa-solid fa-greater-than"></i></a>
                     </div>
                 </div>

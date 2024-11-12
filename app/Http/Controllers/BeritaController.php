@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Berita;
+use GrahamCampbell\Markdown\Facades\Markdown;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -22,6 +23,7 @@ class BeritaController extends Controller
      */
     public function create()
     {
+
         return view('berita.create');
     }
 
@@ -55,6 +57,8 @@ class BeritaController extends Controller
      */
     public function show(Berita $berita)
     {
+        $berita = Berita::findOrFail($berita->id);
+        $berita->description = Markdown::convertToHtml($berita->description);
         return view('berita.show', compact('berita'));
     }
 

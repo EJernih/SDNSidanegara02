@@ -18,6 +18,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Tambahkan link Bootstrap CDN jika belum ada -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Style dan Script EasyMDE -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
   
 
 </head>
