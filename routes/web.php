@@ -33,13 +33,14 @@ Route::get('/visi_misi', [HomeController::class, 'visi_misi']);
 Route::get('/sarpras', [HomeController::class, 'sarpras']);
 Route::get('/berita', [HomeController::class, 'berita']);
 Route::get('/detailberita/{id}', [HomeController::class, 'berita_detail']);
+Route::get('/tentang_sekolah/{id}', [SambutanController::class, 'show'])->name('tentang_sekolah');
 
 
 
 //AUTH
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/login', [AuthController::class, 'authenticated']);
-Route::get('/logout', [AuthController::class, 'logout']);
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 
 //dashboard

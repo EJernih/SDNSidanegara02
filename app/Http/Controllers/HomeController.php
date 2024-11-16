@@ -19,7 +19,8 @@ class HomeController extends Controller
      public function index()
     {
         $sliders = Slider::all();
-        return view('home.index', compact('sliders'));
+        $sambutan = Sambutan::all()->first();
+        return view('home.index', compact('sliders', 'sambutan'));
     }
 
     public function tentang_sekolah()

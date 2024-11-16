@@ -5,7 +5,6 @@
 @section('content')
 
 <div class="container">
-    <a href="/ppdbs/create" class="btn btn-primary mb-3">Tambah Data</a>
     
     @if ($message = Session::get('message'))
       <div class="alert alert-success">
@@ -28,6 +27,7 @@
                     <th>Syarat 3</th>
                     <th>Syarat 4</th>
                     <th>Gambar</th>
+                    <th>Link Pendaftaran</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -50,12 +50,15 @@
                             <img src="/image/ppdb/{{$ppdb->image}}" alt="" class="img-fluid" width="90">
                         </td>
                         <td>
+                            <!-- Tombol dinamis untuk daftar -->
+                            @if ($ppdb->link)
+                                <a href="{{ $ppdb->link }}" target="_blank" class="btn btn-primary">Daftar Sekarang</a>
+                            @else
+                                <span>Link belum tersedia</span>
+                            @endif
+                        </td>
+                        <td>
                             <a href="{{route('ppdbs.edit', $ppdb->id)}}" class="btn btn-warning">Edit</a>
-                            <form action="{{route('ppdbs.destroy', $ppdb->id)}}" method="POST" style="display:inline-block;">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Hapus</button>
-                            </form>
                         </td>
                     </tr>
                 @endforeach

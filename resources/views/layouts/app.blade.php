@@ -103,36 +103,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <p>Data Sliders</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="/pengumumans" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Pengumuman</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/singkats" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Sambutan Singkat</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/beritas" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Berita</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/ekskuls" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Ekstrakulikuler</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/galeris" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Galeri</p>
-                </a>
-              </li>
             </ul>
           </li>
               <!-- Menu Halaman Profil -->

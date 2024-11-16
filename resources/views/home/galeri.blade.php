@@ -48,7 +48,7 @@
 
 
     <!-- Galeri -->
-    <div class="galeri mt-5">
+    <div class="galeri mt-5 pb-5">
       <div class="container">
         <div class="title-container">
           <h2 class="text-center fw-bold">GALERI</h2>

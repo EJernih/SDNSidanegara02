@@ -109,7 +109,7 @@
             <p><em>Bismillahirrohmanirrahim</em></p>
             <p><em>Assalamu‘alaikum Wr. Wb.</em></p>
             <p>
-              Segala puji hanya untuk Allah SWT dan shalawat serta salam semoga tercurah atas nabi Muhammad SAW, begitu pula atas keluarga, para sahabat, dan para pengikutnya. Alhamdulillahi robbil alamin, kami panjatkan kehadirat Tuhan Allah SWT...
+               {{ Str::limit($sambutan->description, 200) }}
               <a href="tentang_sekolah">Read More <i class="fa-solid fa-angles-right"></i></a>
             </p>
           </div>
@@ -297,7 +297,7 @@
     <!-- end Ekskul -->
 
     <!-- Galeri -->
-    <div class="galeri mt-5">
+    <div class="galeri mt-5 pb-5">
       <div class="container">
         <div class="title-container">
           <h2 class="text-center fw-bold">GALERI</h2>
@@ -348,45 +348,7 @@
     </div>
     <!-- end Galeri -->
 
-    <!-- Clients -->
-    <div class="clients mt-5">
-      <div class="container">
-        <div class="title-container">
-          <h2 class="text-center fw-bold">CLIENTS</h2>
-        </div>
-        <div class="row mt-4">
-          <div class="col-md-3 pt-4 text-center" data-aos="zoom-in">
-            <img
-              src="assets/img/Logo_Kemendikbud.svg"
-              class="img-fluid brand-image"
-              alt=""
-            />
-          </div>
-          <div class="col-md-3 pt-4 text-center" data-aos="zoom-in">
-            <img
-              src="assets/img/Logo_Komisi_Perlindungan_Anak_Indonesia.png"
-              class="img-fluid brand-image"
-              alt=""
-            />
-          </div>
-          <div class="col-md-3 pt-4 text-center" data-aos="zoom-in">
-            <img
-              src="assets/img/Logo_komnas_perlindungan_anak.png"
-              class="img-fluid brand-image"
-              alt=""
-            />
-          </div>
-          <div class="col-md-3 pt-4 text-center" data-aos="zoom-in">
-            <img
-              src="assets/img/logo-header-ditpsd.png"
-              class="img-fluid brand-image"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end Clients -->
+
 
     <!-- footer -->
     @include('partials.footer')

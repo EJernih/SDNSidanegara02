@@ -25,6 +25,7 @@ class PpdbSeeder extends Seeder
             'sk_3'=> 'vaksin',
             'sk_4' => 'form',
             'image' => 'ppdb_20241029140947NqBq0Z6G.jpeg',
+             'link' => null,
             'created_at' => '2021-12-31 10:00:00',
             'updated_at' => '2021-12-31 10:00:00',
         ]);

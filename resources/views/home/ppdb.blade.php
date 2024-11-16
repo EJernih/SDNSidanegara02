@@ -34,7 +34,7 @@
      <div class="breadcumbs py-3">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center text-white">
-                <h5>PPDB</h5>
+                <h2>PPDB</h2>
                 <ol class="d-flex list-unstyled mb-0">
                     <li>Beranda</li>
                     <li>PPDB</li>
@@ -47,7 +47,7 @@
 
         <!-- ppdb -->
 
-        <div class="profil mt-5">
+        <div class="profil mt-5 pb-5">
           <div class="container">
                           @foreach ($ppdbs as $ppdb)
             <div class="title-container">
@@ -108,9 +108,14 @@
                     </div>
                   </li>
                 </ul>
-                <div class="row-mt-4">
-                  <button type="submit" class="btn btn-submit">Daftar Sekarang</button>
-                </div>
+                <td>
+                    <!-- Tombol dinamis untuk daftar -->
+                    @if ($ppdb->link)
+                        <a href="{{ $ppdb->link }}" target="_blank" class="btn btn-primary">Daftar Sekarang</a>
+                    @else
+                        <span>Link belum tersedia</span>
+                    @endif
+                </td>
               </div>
             </div>
           </div>

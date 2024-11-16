@@ -15,7 +15,7 @@ class SambutanSeeder extends Seeder
     {
         Sambutan::create([
             'id' => '3',
-            'image' => 'assets/img/a2.jpg',
+            'image' => 'sambutan_20241023142455nyPqSskQ.jpg',
             'description' => 'Selamat datang di website kami, kami adalah sebuah perusahaan yang bergerak di bidang jasa penyedia layanan pendidikan dan pelatihan. Kami menyediakan berbagai macam layanan seperti pendidikan formal, pelatihan, sertifikasi, dan beasiswa. Kami juga menyediakan berbagai macam produk seperti buku, perangkat lunak, dan layanan lainnya. Kami siap melayani anda dengan sepenuh hati.',
             'created_at'        => now(),
             'updated_at'        => now(),

@@ -5,7 +5,6 @@
 @section('content')
 
 <div class="container">
-    <a href="/sambutans/create" class="btn btn-primary mb-3">Tambah Data</a>
     
     @if ($message = Session::get('message'))
       <div class="alert alert-success">
@@ -41,11 +40,7 @@
 
                         <td>
                             <a href="{{route('sambutans.edit', $sambutan->id)}}" class="btn btn-warning">Edit</a>
-                            <form action="{{route('sambutans.destroy', $sambutan->id)}}" method="POST" style="display:inline-block;">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Hapus</button>
-                            </form>
+
                         </td>
                     </tr>
                 @endforeach

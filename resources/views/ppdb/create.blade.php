@@ -99,6 +99,14 @@
                     <label for="">Gambar</label>
                     <input type="file" class="form-control" name="image">
                 </div>
+
+                 @error('link')
+                <small style="color: red">{{$message}}</small>   
+                @enderror
+                <div class="form-group">
+                    <label for="">Link Pendaftaran</label>
+                    <input type="url" class="form-control" name="link">
+                </div>
                 
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block">Submit</button>

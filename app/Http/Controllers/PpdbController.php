@@ -41,6 +41,7 @@ class PpdbController extends Controller
             'sk_3' => 'required',
             'sk_4' => 'required',
             'image' => 'required|image',
+            'link' => 'nullable|url',
         ]);
 
         $input = $request->all();
@@ -88,7 +89,8 @@ class PpdbController extends Controller
             'sk_2' => 'required',
             'sk_3' => 'required',
             'sk_4' => 'required',
-            'image' => 'required',
+            'image' => 'image',
+            'link' => 'nullable|url'
         ]);
 
         $input = $request->all();

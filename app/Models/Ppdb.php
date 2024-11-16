@@ -21,6 +21,7 @@ class Ppdb extends Model
         'sk_2',
         'sk_3',
         'sk_4',
-        'image'
+        'image',
+        'link'
     ];
 }
