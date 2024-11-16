@@ -100,6 +100,8 @@
         </div>
       </div>
 
+      
+
       <!-- Sambutan Kepala Sekolah -->
       <div class="col-md-7 sambutan-container"> <!-- Add custom class sambutan-container -->
         <div class="row">
@@ -109,7 +111,7 @@
             <p><em>Bismillahirrohmanirrahim</em></p>
             <p><em>Assalamu‘alaikum Wr. Wb.</em></p>
             <p>
-              Segala puji hanya untuk Allah SWT dan shalawat serta salam semoga tercurah atas nabi Muhammad SAW, begitu pula atas keluarga, para sahabat, dan para pengikutnya. Alhamdulillahi robbil alamin, kami panjatkan kehadirat Tuhan Allah SWT...
+              {{ Str::limit($sambutan->description, 200) }}
               <a href="tentang_sekolah">Read More <i class="fa-solid fa-angles-right"></i></a>
             </p>
           </div>
