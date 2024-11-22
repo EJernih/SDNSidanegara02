@@ -236,21 +236,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="/akuns" class="nav-link">
               <i class="nav-icon fa-solid fa-user"></i>
               <p>
-                Tentang
+                Akun
               </p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa-solid fa-phone"></i>
-              <p>
-                Kontak
-              </p>
-            </a>
-          </li>
+
           <li class="nav-item">
             <a href="/logout" class="nav-link">
               <i class="nav-icon fa-solid fa-right-from-bracket"></i>

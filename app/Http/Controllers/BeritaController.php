@@ -58,12 +58,8 @@ class BeritaController extends Controller
     public function show(Berita $berita)
     {
         $berita = Berita::findOrFail($berita->id);
-         if (!$berita) {
-            // Redirect jika berita tidak ditemukan
-            return redirect('/berita')->with('error', 'Berita tidak ditemukan');
-        }
         $berita->description = Markdown::convertToHtml($berita->description);
-        return view('detailberita', compact('berita'));
+        return view('berita.show', compact('berita'));
     }
 
     /**

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Detail Berita</title>
+    <title>SDN02CLP</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -13,6 +13,14 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="{{ asset('assets/vendor/fontawesome/css/all.min.css')}}" />
+
+    <!-- aos -->
+     <link rel="stylesheet" href="{{ asset('assets/vendor/aos/dist/aos.css')}}">
+
+
   </head>
 
   <body>
@@ -67,18 +75,22 @@
     </div>
     <!-- End Detail Berita -->
 
-    <!-- Footer -->
+    <!-- footer -->
     @include('partials.footer')
-    <!-- End Footer -->
+    <!-- end footer -->
 
-    <!-- Scroll to Top Button -->
+   <!-- top -->
     <a href="#" class="btn-to-top p-3">
-      <i class="fa fa-chevron-up"></i>
+        <i class="fa fa-chevron-up"></i>
     </a>
-    <!-- End Scroll to Top Button -->
+   <!-- end to top -->
 
-    <!-- Scripts -->
-    <script src="{{ asset('assets/vendor/jquery/jquery-3.7.1.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{('assets/vendor/jquery/jquery-3.7.1.min.js')}"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/fontawesome/js/all.min.js"></script>
+    <script src="assets/vendor/mansory/masonry.pkgd.min.js"></script>
+    <script src="assets/vendor/aos/dist/aos.js"></script>
+    <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

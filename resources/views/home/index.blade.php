@@ -73,38 +73,31 @@
     <div class="row">
       
       <!-- Box Pengumuman -->
-      <div class="col-md-5 mb-4 mb-md-0"> <!-- Add margin-bottom for small screens -->
+      <div class="col-md-5 mb-4 mb-md-0"> 
         <div class="card shadow border-0 pengumuman">
           <div class="card-header text-white">
             <h4 class="mb-0">Pengumuman</h4>
           </div>
           <div class="card-body">
             <ul class="list-group list-group-flush">
+              @foreach ($beritas as $berita)
+                  
               <li class="list-group-item fw-bold">
-                <a href="#">PENILAIAN TENGAH SEMESTER GANJIL T.P. 2024/2025</a>
+                <a href="{{ route('berita.show', $berita->id) }}">{{ $berita->title }}</a>
               </li>
-              <li class="list-group-item fw-bold">
-                <a href="#">REV. JADWAL KBM SEMESTER GANJIL TP. 2024/2025</a>
-              </li>
-              <li class="list-group-item fw-bold">
-                <a href="#">PENGUMUMAN PEMBAGIAN KELAS X/FASE E</a>
-              </li>
-              <li class="list-group-item fw-bold">
-                <a href="#">KALENDER PENDIDIKAN SMA NEGERI 1 YOGYAKARTA</a>
-              </li>
-              <li class="list-group-item fw-bold">
-                <a href="#">PENGUMUMAN LOLOS SELEKSI KELAS CAMBRIDGE</a>
-              </li>
+
+              @endforeach
             </ul>
           </div>
         </div>
       </div>
+      <!-- Box Pengumuman -->
 
       <!-- Sambutan Kepala Sekolah -->
-      <div class="col-md-7 sambutan-container"> <!-- Add custom class sambutan-container -->
+      <div class="col-md-7 sambutan-container">
         <div class="row">
           <div class="col-md-12">
-            <img src="assets/img/g11.jpg" class="gambar-sambutan mb-4" alt="Thumb">
+            <img src="{{asset ('image/sambutan/'. $sambutan->image)}}" class="gambar-sambutan mb-4" alt="Thumb">
             <h4>Sambutan Kepala Sekolah</h4>
             <p><em>Bismillahirrohmanirrahim</em></p>
             <p><em>Assalamu‘alaikum Wr. Wb.</em></p>
@@ -125,60 +118,42 @@
 
    
 
-    <!-- Berita -->
-    <div class="Berita mt-5 bg-light py-5">
-      <div class="container">
-        <div class="title-container text-center">
-          <h2 class="fw-bold">Berita</h2>
-        </div>
-        
-        <div class="row mt-5">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card">
-                <img src="assets/img/b2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <a href="berita.html">Read More <i class="fa-solid fa-greater-than"></i></a>
+     <!-- Prestasi -->
+     <div class="teams bg-light py-5">
+            <div class="container">
+                <div class="title-container">
+                    <h2 class="text-center fw-bold">Prestasi Terbaru</h2>
                 </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="assets/img/b5.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <a href="berita.html">Read More <i class="fa-solid fa-greater-than"></i></a>
+                <div class="row mt-5">
+                  
+                  @foreach ($prestasis as $prestasi)
+                  
+                  <div class="col-md-12" data-aos="fade-right">
+                    <div class="card border-0 shadow shadow-sm mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="{{ asset('image/prestasi/' . $prestasi->image) }}" width="300" height="200" alt="{{ $prestasi->title }}">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">{{ $prestasi->title }}</h5>
+                          <p class="card-text "><i class="fa-solid fa-calendar-days me-3"></i>{{ $prestasi->date }}</p>
+                          <hr>
+                          <p class="card-text"><small class="text-body-secondary">{{ $prestasi->description }}</small></p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="assets/img/b7.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                  <a href="berita.html">Read More <i class="fa-solid fa-greater-than"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="assets/img/b1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <a href="berita.html">Read More <i class="fa-solid fa-greater-than"></i></a>
-                </div>
+                  @endforeach
+
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- end Berita -->
+     <!-- end Prestasi -->
 
 
     <!-- Ekskul -->
@@ -306,40 +281,26 @@
           <div class="col-md-12 d-flex justify-content-center">
             <ul class="list-unstyled d-flex galeri-filters">
               <li data-filter="*" class="py-2 px-4 filter-active text-white">ALL</li>
-              <li data-filter=".filter-web" class="py-2 px-4">Web</li>
-              <li data-filter=".filter-design" class="py-2 px-4">Design</li>
-              <li data-filter=".filter-photo" class="py-2 px-4">Photography</li>
+
+              @foreach ($filters as $filter)
+              <li data-filter=".filter-{{$filter->item}}" class="py-2 px-4">
+                {{ucfirst(\App\Models\Filter::find($filter->item)->filter)}}
+              </li>
+              @endforeach
             </ul>
           </div>
         </div>
+
         <div class="row mt-5">
           <div class="col-md-12">
             <div class="mansory galeri-container">
               <div class="mansory-sizer"></div>
-              <div class="mansory-item m-2 galeri-item filter-web">
-                <img src="/assets/img/b1.jpg" alt="" class="img-fluid" />
+              @foreach ($galeris as $galeri)
+                  
+              <div class="mansory-item m-2 galeri-item filter-{{ $galeri->filter_id }}">
+                <img src="{{ asset('image/galeri/'. $galeri->image) }}" alt="{{$galeri->title}}" class="img-fluid" />
               </div>
-              <div class="mansory-item m-2 galeri-item filter-photo">
-                <img src="/assets/img/b2.jpg" alt="" class="img-fluid" />
-              </div>
-              <div class="mansory-item m-2 galeri-item filter-design">
-                <img src="/assets/img/b3.jpg" alt="" class="img-fluid" />
-              </div>
-              <div class="mansory-item m-2 galeri-item filter-design">
-                <img src="/assets/img/b4.jpg" alt="" class="img-fluid" />
-              </div>
-              <div class="mansory-item m-2 galeri-item filter-photo">
-                <img src="/assets/img/b5.jpg" alt="" class="img-fluid" />
-              </div>
-              <div class="mansory-item m-2 galeri-item filter-web">
-                <img src="/assets/img/b6.jpg" alt="" class="img-fluid" />
-              </div>
-              <div class="mansory-item m-2 galeri-item filter-design">
-                <img src="/assets/img/b7.jpg" alt="" class="img-fluid" />
-              </div>
-              <div class="mansory-item m-2 galeri-item filter-design">
-                <img src="/assets/img/b8.jpg" alt="" class="img-fluid" />
-              </div>
+              @endforeach
              
             </div>
           </div>

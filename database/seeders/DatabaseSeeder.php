@@ -21,11 +21,7 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Jernih',
-            'email' => 'jernih2004@gmail.com',
-            'password' => Hash::make('2004')
-        ]);
+
 
 
         $this->call([
@@ -40,6 +36,7 @@ class DatabaseSeeder extends Seeder
             SliderSeeder::class,
             TendikSeeder::class,
             VisiMisiSeeder::class,
+            UserSeeder::class,
         ]);
     }
 }

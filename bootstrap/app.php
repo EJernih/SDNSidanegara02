@@ -16,3 +16,7 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withExceptions(function (Exceptions $exceptions) {
         //
     })->create();
+
+
+    $app->make(\Illuminate\Contracts\Http\Kernel::class)->pushMiddleware(\Spatie\Permission\Middleware\RoleMiddleware::class);
+    $app->make(\Illuminate\Contracts\Http\Kernel::class)->pushMiddleware(\Spatie\Permission\Middleware\PermissionMiddleware::class);

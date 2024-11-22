@@ -15,9 +15,9 @@ class KontakSeeder extends Seeder
     {
         Kontak::create([
             'id' => 2,
-            'phone' => '081234567890',
-            'email' => 'kontak@email.com',
-            'address' => 'Jl. Kebon Sirih No. 123',
+            'phone' => '0282521120',
+            'email' => 'sidanegara2.cilteng@gmail.com',
+            'address' => 'Jl. Argopuro No.425, Tambaksari, Sidanegara, Kec. Cilacap Tengah, Kabupaten Cilacap, Jawa Tengah 53223',
             'created_at' => now(),
             'updated_at' => now()
         ]);

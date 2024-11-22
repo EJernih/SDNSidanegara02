@@ -55,40 +55,47 @@
 
 
 
-        <div class="container mt-5">
-            <div class="row">
-            <div class="col-md-12">
-                <div class="card border-0 shadow shadow-sm">
-                    <div class="card-body">
-                        <div class="container">
-                            <div class="row">
-                              @foreach ($kontaks as $kontak)
-                                  
-                              <div class="col-md-4">
-                                  <i class="fa fa-map-marker-alt fa-2x primary float-start me-4"></i>
-                                  <h4 class="fw-bolder">lokasi</h4>
-                                  <p class="ms-5">{{ $kontak->address }}</p>
-                              </div> 
-                              <div class="col-md-4">
-                                  <i class="fa fa-envelope fa-2x primary float-start me-4"></i>
-                                  <h4 class="fw-bolder">Email</h4>
-                                  <p class="ms-5">{{ $kontak->email }}</p>
-                              </div> 
-                              <div class="col-md-4">
-                                  <i class="fa fa-phone fa-2x primary float-start me-4"></i>
-                                  <h4 class="fw-bolder">telp</h4>
-                                  <p class="ms-5">{{ $kontak->phone }}</p>
-                              </div> 
-                          </div>
-                              @endforeach
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card border-0 shadow shadow-sm">
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row">
+                            @foreach ($kontaks as $kontak)
+                                <div class="col-md-4">
+                                    <i class="fa fa-map-marker-alt fa-2x primary float-start me-4"></i>
+                                    <h4 class="fw-bolder">Lokasi</h4>
+                                    <!-- Alamat link ke Google Maps -->
+                                    <p class="ms-5">
+                                        <a href="https://www.google.com/maps?q={{ urlencode($kontak->address) }}" target="_blank" class="text-decoration-none">
+                                            {{ $kontak->address }}
+                                        </a>
+                                    </p>
+                                </div> 
+                                <div class="col-md-4">
+                                    <i class="fa fa-envelope fa-2x primary float-start me-4"></i>
+                                    <h4 class="fw-bolder">Email</h4>
+                                    <p class="ms-5">
+                                        <a href="mailto:{{ $kontak->email }}" class="text-decoration-none">{{ $kontak->email }}</a>
+                                    </p>
+                                </div> 
+                                <div class="col-md-4">
+                                    <i class="fa fa-phone fa-2x primary float-start me-4"></i>
+                                    <h4 class="fw-bolder">Telepon</h4>
+                                    <p class="ms-5">
+                                        <a href="tel:{{ $kontak->phone }}" class="text-decoration-none">{{ $kontak->phone }}</a>
+                                    </p>
+                                </div> 
+                            @endforeach
                         </div>
                     </div>
                 </div>
-                </div>
-                </div>
-                <div class="row mt-5">
             </div>
         </div>
+    </div>
+</div>
+
       </div>
      <!-- end kontak -->
 

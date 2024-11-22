@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AkunController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\DashboardController;
@@ -11,15 +12,13 @@ use App\Http\Controllers\PpdbController;
 use App\Http\Controllers\PrestasiController;
 use App\Http\Controllers\SambutanController;
 use App\Http\Controllers\SarPraController;
-use App\Http\Controllers\SarprasController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TendikController;
 use App\Http\Controllers\VisiMisiController;
+use App\Models\Berita;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
@@ -68,7 +67,10 @@ Route::resource('galeris', GaleriController::class)->middleware('auth');
 Route::resource('filters', FilterController::class)->middleware('auth');
 
 Route::resource('beritas', BeritaController::class)->middleware('auth');
+Route::get('berita/{id}', [BeritaController::class, 'show'])->name('berita.show');
 
 
 Route::resource('kontaks', KontakController::class);
+
+Route::resource('akuns', AkunController::class)->middleware('auth');
 
