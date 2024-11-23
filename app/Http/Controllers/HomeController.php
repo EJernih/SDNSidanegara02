@@ -20,15 +20,11 @@ class HomeController extends Controller
     {
         $sliders = Slider::all();
         $sambutan = Sambutan::all()->first();
-<<<<<<< HEAD
         $beritas = Berita::latest()->take(3)->get();
         $prestasis = Prestasi::latest()->take(3)->get();
         $galeris = Galeri::all();
         $filters = Galeri::select('filter_id as item')->distinct()->get();
         return view('home.index', compact('sliders', 'sambutan','beritas','prestasis','galeris','filters'));
-=======
-        return view('home.index', compact('sliders', 'sambutan'));
->>>>>>> 92c4c86d4e1c66dedd268209270924cc4aa32dae
     }
 
     public function tentang_sekolah()
