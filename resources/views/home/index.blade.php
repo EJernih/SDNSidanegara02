@@ -104,11 +104,7 @@
             <p><em>Bismillahirrohmanirrahim</em></p>
             <p><em>Assalamu‘alaikum Wr. Wb.</em></p>
             <p>
-<<<<<<< HEAD
                {{ Str::limit($sambutan->description, 200) }}
-=======
-              {{ Str::limit($sambutan->description, 200) }}
->>>>>>> 92c4c86d4e1c66dedd268209270924cc4aa32dae
               <a href="tentang_sekolah">Read More <i class="fa-solid fa-angles-right"></i></a>
             </p>
           </div>
