@@ -31,7 +31,7 @@ Route::get('/tentang_sekolah', [HomeController::class, 'tentang_sekolah']);
 Route::get('/visi_misi', [HomeController::class, 'visi_misi']);
 Route::get('/sarpras', [HomeController::class, 'sarpras']);
 Route::get('/berita', [HomeController::class, 'berita']);
-Route::get('/detailberita/{id}', [HomeController::class, 'berita_detail']);
+Route::get('/detailberita/{id}', [HomeController::class, 'berita_detail'])->name('berita.show');
 Route::get('/tentang_sekolah/{id}', [SambutanController::class, 'show'])->name('tentang_sekolah');
 
 
@@ -67,7 +67,7 @@ Route::resource('galeris', GaleriController::class)->middleware('auth');
 Route::resource('filters', FilterController::class)->middleware('auth');
 
 Route::resource('beritas', BeritaController::class)->middleware('auth');
-Route::get('berita/{id}', [BeritaController::class, 'show'])->name('berita.show');
+Route::get('berita/{id}', [BeritaController::class, 'show']);
 
 
 Route::resource('kontaks', KontakController::class);
