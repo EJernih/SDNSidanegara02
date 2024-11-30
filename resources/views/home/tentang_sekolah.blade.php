@@ -55,7 +55,9 @@
             @foreach ($sambutans as $sambutan)
 
             <div class="col-md-12 text-center">
-              <img src="{{asset ('image/sambutan/'. $sambutan->image)}}" class="gambar-sambutan img-fluid" alt="">
+                @if (isset($sambutan->image))
+                <img src="{{asset ('image/sambutan/'. $sambutan->image)}}" class="gambar-sambutan img-fluid" alt="">
+                @endif
             </div>
             <p><em>Bismillahirrohmanirrahim</em></p>
             <p><em>Assalamu‘alaikum Wr Wb</em></p>
@@ -75,7 +77,7 @@
     <!-- end footer -->
 
    <!-- top -->
-    <a href="#" class="btn-to-top p-3">
+    <a href="#" class="btn-to-top rounded-circle p-3">
         <i class="fa fa-chevron-up"></i>
     </a>
    <!-- end to top -->

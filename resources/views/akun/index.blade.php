@@ -5,7 +5,9 @@
 @section('content')
 
 <div class="container">
+    @can('create-user')
     <a href="/akuns/create" class="btn btn-primary mb-3">Tambah Data</a>
+    @endcan
 
     @if ($message = Session::get('message'))
       <div class="alert alert-success">
@@ -37,12 +39,17 @@
                         <td>{{ $akun->password }}</td>
 
                         <td>
+                            @can('edit-user')
                             <a href="{{route('akuns.edit', $akun->id)}}" class="btn btn-warning">Edit</a>
+                            @endcan
+
+                            @can('delete-user')     
                             <form action="{{route('akuns.destroy', $akun->id)}}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Hapus</button>
                             </form>
+                            @endcan
                         </td>
                     </tr>
                 @endforeach

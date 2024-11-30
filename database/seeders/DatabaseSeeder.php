@@ -37,6 +37,7 @@ class DatabaseSeeder extends Seeder
             TendikSeeder::class,
             VisiMisiSeeder::class,
             UserSeeder::class,
+            RolePermissionSeeder::class,
         ]);
     }
 }

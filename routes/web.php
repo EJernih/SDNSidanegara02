@@ -43,8 +43,9 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 
 //dashboard
-Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
-
+Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+});
 
 Route::resource('sliders', SliderController::class)->middleware('auth');
 
@@ -66,11 +67,17 @@ Route::resource('ppdbs', PpdbController::class)->middleware('auth');
 Route::resource('galeris', GaleriController::class)->middleware('auth');
 Route::resource('filters', FilterController::class)->middleware('auth');
 
-Route::resource('beritas', BeritaController::class)->middleware('auth');
-Route::get('berita/{id}', [BeritaController::class, 'show']);
-
 
 Route::resource('kontaks', KontakController::class);
 
 Route::resource('akuns', AkunController::class)->middleware('auth');
+
+
+//route role
+
+Route::get('SuperAdmin', function () {
+    return 'h1>Halo SuperAdmin</h1>';
+})->middleware('auth', 'verified', 'role:SuperAdmin');
+
+
 

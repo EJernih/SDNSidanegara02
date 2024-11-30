@@ -5,7 +5,9 @@
 @section('content')
 
 <div class="container">
+    @can('create-tulisan', $post)
     <a href="/sliders/create" class="btn btn-primary mb-3">Tambah Data</a>
+    @endcan
     
     @if ($message = Session::get('message'))
       <div class="alert alert-success">

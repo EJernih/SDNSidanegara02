@@ -19,6 +19,10 @@
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    <!-- lightox2 -->
+      <link rel="stylesheet" href="assets/vendor/lightbox2/dist/css/lightbox.min.css">
+
+
     <title>SDN02CLP</title>
   </head>
 
@@ -73,9 +77,13 @@
               <div class="mansory-sizer"></div>
               @foreach ($galeris as $galeri)
                   
-              <div class="mansory-item m-2 galeri-item filter-{{ $galeri->filter_id }}">
-                <img src="{{ asset('image/galeri/'. $galeri->image) }}" alt="{{$galeri->title}}" class="img-fluid" />
-              </div>
+            <div class="mansory-item m-2 galeri-item filter-{{ $galeri->filter_id }}">
+                @if (isset($galeri->image))
+            <a href="{{asset ('image/galeri/'. $galeri->image)}}" data-lightbox="roadtrip" data-title="{{ $galeri->title }}">
+                <img src="{{asset ('image/galeri/'. $galeri->image)}}" class="img-fluid" alt="{{$galeri->title}}">
+            </a>
+                @endif
+            </div>
               @endforeach
              
             </div>
@@ -94,7 +102,7 @@
     <!-- end footer -->
 
    <!-- top -->
-    <a href="#" class="btn-to-top p-3">
+    <a href="#" class="btn-to-top rounded-circle p-3">
         <i class="fa fa-chevron-up"></i>
     </a>
    <!-- end to top -->
@@ -106,5 +114,6 @@
     <script src="assets/vendor/aos/dist/aos.js"></script>
     <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/vendor/lightbox2/dist/js/lightbox.min.js"></script>
   </body>
 </html>

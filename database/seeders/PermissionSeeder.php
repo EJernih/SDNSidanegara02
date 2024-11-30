@@ -16,29 +16,6 @@ class PermissionSeeder extends Seeder
      */
     public function run(): void
     {
-        // Membuat slider permissions
-        $slider_permissions = ['view sliders', 'create sliders', 'update sliders', 'delete sliders'];
-        foreach ($slider_permissions as $slider_permission) {
-        Permission::create(['name' => $slider_permission]);
-        }
 
-        // Membuat permissions
-        foreach ($slider_permissions as $slider_permission) {
-            Permission::create(['name' => $slider_permission]);
-        }
-
-        // Membuat role dan assign permissions
-        $SuperAdminRole = Role::create(['name' => 'SuperAdmin']);
-        $SuperAdminRole->givePermissionTo($slider_permissions);
-
-        // Memberikan role kepada user
-        $user = User::where('email', 'sidanegara2.cilteng@gmail.com')->first();
-        
-        if ($user) { // Pastikan user ditemukan sebelum memberikan role
-            $user->assignRole('SuperAdmin');
-        } else {
-            // Jika user tidak ditemukan, bisa menambahkan log atau penanganan error lainnya
-            Log::warning('User with email sidanegara2.cilteng@gmail.com not found.'); // Use the Log facade here
-        }
     }
 }

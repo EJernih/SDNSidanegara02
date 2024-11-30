@@ -57,7 +57,9 @@
             @foreach ($beritas as $berita)
             <div class="col">
                 <div class="card">
-                    <img src="{{ asset('image/berita/' . $berita->image) }}" class="card-img-top" alt="{{ $berita->title }}">
+                    @if (isset($berita->image))
+                    <img src="{{asset ('image/berita/'. $berita->image)}}" class="card-img-top" alt="{{ $berita->title }}">
+                    @endif
                     <div class="card-body">
                         <h5 class="card-title">{{ $berita->title }}</h5>
                         <p class="card-text">{!! Markdown::convertToHtml(Str::limit($berita->description, 100)) !!}</p>
@@ -79,7 +81,7 @@
     <!-- end footer -->
 
    <!-- top -->
-    <a href="#" class="btn-to-top p-3">
+    <a href="#" class="btn-to-top rounded-circle p-3">
         <i class="fa fa-chevron-up"></i>
     </a>
    <!-- end to top -->

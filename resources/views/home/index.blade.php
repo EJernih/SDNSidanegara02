@@ -73,7 +73,7 @@
     <div class="row">
       
       <!-- Box Pengumuman -->
-      <div class="col-md-5 mb-4 mb-md-0"> 
+      <div class="col-md-5 mb-4 mb-md-0" data-aos="fade-right"> 
         <div class="card shadow border-0 pengumuman">
           <div class="card-header text-white">
             <h4 class="mb-0">Pengumuman</h4>
@@ -96,10 +96,12 @@
       
 
       <!-- Sambutan Kepala Sekolah -->
-      <div class="col-md-7 sambutan-container">
+      <div class="col-md-7 sambutan-container" data-aos="fade-left">
         <div class="row">
           <div class="col-md-12">
+            @if (isset($sambutan->image))
             <img src="{{asset ('image/sambutan/'. $sambutan->image)}}" class="gambar-sambutan mb-4" alt="Thumb">
+            @endif
             <h4>Sambutan Kepala Sekolah</h4>
             <p><em>Bismillahirrohmanirrahim</em></p>
             <p><em>Assalamu‘alaikum Wr. Wb.</em></p>
@@ -164,12 +166,7 @@
         <div class="title-container text-center">
           <h2 class="fw-bold">Ekstrakulikuler</h2>
         </div>
-        <p class="text-center mt-4">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero atque
-          et, eaque itaque officiis magni aperiam, nostrum quidem voluptate ab
-          facilis beatae sapiente quo ad aut, quasi minima perferendis
-          reprehenderit!
-        </p>
+
         <div class="row mt-5">
           <div class="col-md-4">
             <div class="card border-0 text-center p-4 mt-3" data-aos="zoom-in">
@@ -178,10 +175,6 @@
                   <i class="fa-solid fa-book-quran fa-3x"></i>
                 </div>
                 <div class="card-title fw-bolder mt-4">BTQ</div>
-                <p class="card-description mt-3">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Placeat nihil facere eligendi quam quo repellendus.
-                </p>
               </div>
             </div>
           </div>
@@ -192,10 +185,6 @@
                   <i class="fa-solid fa-golf-ball-tee fa-3x"></i>
                 </div>
                 <div class="card-title fw-bolder mt-4">Bulutangkis</div>
-                <p class="card-description mt-3">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Placeat nihil facere eligendi quam quo repellendus.
-                </p>
               </div>
             </div>
           </div>
@@ -208,9 +197,6 @@
                 <div class="card-title fw-bolder mt-4">
                   <a href="ekskul.html" style="text-decoration: none; color: inherit;">Drumband</a>
                 </div>
-                <p class="card-description mt-3">
-                  Pembimbing: Dyah Surya Nur Wibi
-                </p>
               </div>
             </div>
           </div>
@@ -221,9 +207,6 @@
                   <i class="fa-solid fa-campground fa-3x"></i>
                 </div>
                 <div class="card-title fw-bolder mt-4">Pramuka</div>
-                <p class="card-description mt-3">
-                  Pembimbing: Dyah Surya Nur Wibi
-                </p>
               </div>
             </div>
           </div>
@@ -231,12 +214,9 @@
             <div class="card border-0 text-center p-4 mt-3" data-aos="zoom-in">
               <div class="card-body">
                 <div class="card-icon">
-        <i class="fa-solid fa-music fa-3x"></i>
+                  <i class="fa-solid fa-music fa-3x"></i>
                 </div>
                 <div class="card-title fw-bolder mt-4">Seni Vokal</div>
-                <p class="card-description mt-3">
-                  Pembimbing: Dyah Surya Nur Wibi
-                </p>
               </div>
             </div>
           </div>
@@ -247,10 +227,6 @@
                   <i class="fa-solid fa-palette fa-3x"></i>
                 </div>
                 <div class="card-title fw-bolder mt-4">Seni Lukis</div>
-                <p class="card-description mt-3">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Placeat nihil facere eligendi quam quo repellendus.
-                </p>
               </div>
             </div>
           </div>
@@ -261,10 +237,6 @@
                   <i class="fa-solid fa-table-tennis-paddle-ball fa-3x"></i>
                 </div>
                 <div class="card-title fw-bolder mt-4">Tenis</div>
-                <p class="card-description mt-3">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Placeat nihil facere eligendi quam quo repellendus.
-                </p>
               </div>
             </div>
           </div>
@@ -274,7 +246,7 @@
     <!-- end Ekskul -->
 
     <!-- Galeri -->
-    <div class="galeri mt-5 pb-5">
+    <div class="galeri mt-5 pb-5" data-aos="fade-up">
       <div class="container">
         <div class="title-container">
           <h2 class="text-center fw-bold">GALERI</h2>
@@ -318,7 +290,7 @@
     <!-- end footer -->
 
    <!-- top -->
-    <a href="#" class="btn-to-top p-3">
+    <a href="#" class="btn-to-top rounded-circle p-3">
         <i class="fa fa-chevron-up"></i>
     </a>
    <!-- end to top -->

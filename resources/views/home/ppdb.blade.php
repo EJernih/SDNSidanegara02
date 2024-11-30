@@ -55,13 +55,10 @@
             </div>
 
             <div class="row mt-5">
-
-
-                  
-
-
                 <div class="col-md-6 d-flex align-items-center" data-aos="fade-right">
-                  <img src="{{ asset('image/ppdb/'. $ppdb->image) }}" alt="{{ $ppdb->name }}" class="img-fluid max-height-50" />
+                  @if (isset($ppdb->image))
+                  <img src="{{asset ('image/ppdb/'. $ppdb->image)}}" class="img-fluid max-height-50" alt="{{ $ppdb->name }}">
+                  @endif
               </div>
               <div class="col-md-6" data-aos="fade-left">
                 <p>
@@ -133,7 +130,7 @@
     <!-- end footer -->
 
    <!-- top -->
-    <a href="#" class="btn-to-top p-3">
+    <a href="#" class="btn-to-top rounded-circle p-3">
         <i class="fa fa-chevron-up"></i>
     </a>
    <!-- end to top -->

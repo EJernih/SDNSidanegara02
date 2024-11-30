@@ -52,14 +52,15 @@
                 <div class="title-container">
                     <h2 class="text-center fw-bold">Guru dan Tenaga Pendidik</h2>
                 </div>
-                <p class="text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed corrupti ipsa molestias sint! Laudantium eum provident possimus quisquam sit cupiditate laborum quaerat asperiores doloribus? Pariatur possimus enim quod distinctio?</p>
 
                 <div class="row">
                   @foreach ($tendiks as $tendik)
                       
                   <div class="col-md-3 mb-4" data-aos="fade-up"> 
                       <div class="card" style="width: 18rem;">
-                  <img src="{{ asset('image/tendik/'. $tendik->image) }}" class="card-img-top" alt="{{ $tendik->nama }}">
+                        @if (isset($tendik->image))
+                        <img src="{{asset ('image/tendik/'. $tendik->image)}}" class="card-img-top" alt="{{ $tendik->nama }}">
+                        @endif
                   <div class="card-body text-center">
                       <h5 class="card-title fw-bold">{{ $tendik->nama }}</h5>
                       <p class="card-text text-mute">{{ $tendik->pelajaran }}</p>
@@ -85,7 +86,7 @@
     <!-- end footer -->
 
    <!-- top -->
-    <a href="#" class="btn-to-top p-3">
+    <a href="#" class="btn-to-top rounded-circle p-3">
         <i class="fa fa-chevron-up"></i>
     </a>
    <!-- end to top -->

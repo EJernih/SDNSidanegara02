@@ -110,7 +110,8 @@
     @include('partials.footer')
     <!-- end footer -->
     
-    <a href="#" class="btn-to-top p-3">
+   <!-- top -->
+    <a href="#" class="btn-to-top rounded-circle p-3">
         <i class="fa fa-chevron-up"></i>
     </a>
    <!-- end to top -->

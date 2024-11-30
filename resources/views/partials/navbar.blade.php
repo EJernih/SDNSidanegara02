@@ -29,7 +29,13 @@
                 <li class="nav-item"><a class="nav-link fw-bolder {{ Request::is('galeri') ? 'active' : '' }}" href="{{ url('galeri') }}">Galeri</a></li>
                 <li class="nav-item"><a class="nav-link fw-bolder {{ Request::is('berita') ? 'active' : '' }}" href="{{ url('berita') }}">Berita</a></li>
                 <li class="nav-item"><a class="nav-link fw-bolder {{ Request::is('kontak') ? 'active' : '' }}" href="{{ url('kontak') }}">Kontak</a></li>
-                <li class="nav-item"><a class="nav-link fw-bolder {{ Request::is('login') ? 'active' : '' }}" href="{{ url('login') }}">Login</a></li>
+                <li class="nav-item">
+                    @if (!auth()->check())
+                        <a class="nav-link fw-bolder {{ Request::is('login') ? 'active' : '' }}" href="{{ url('login') }}">Login</a>
+                    @else
+                        <a class="nav-link" href="{{ url('dashboard') }}">Dashboard</a>
+                    @endif
+                </li>
             </ul>
         </div>
     </div>

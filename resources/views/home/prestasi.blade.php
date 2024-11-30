@@ -46,7 +46,7 @@
 
 
 
-     <!-- teams -->
+     <!-- Prestasi -->
      <div class="teams bg-light py-5">
             <div class="container">
                 <div class="title-container">
@@ -60,7 +60,9 @@
                     <div class="card border-0 shadow shadow-sm mb-3">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img src="{{ asset('image/prestasi/' . $prestasi->image) }}" width="300" height="200" alt="{{ $prestasi->title }}">
+                        @if (isset($prestasi->image))
+                        <img src="{{asset ('image/prestasi/'. $prestasi->image)}}" width="300" height="200" alt="{{ $prestasi->title }}">
+                        @endif
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
@@ -81,7 +83,7 @@
           </div>
         </div>
       </div>
-     <!-- end teams -->
+     <!-- end Prestasi -->
 
 
 
@@ -92,7 +94,7 @@
     <!-- end footer -->
 
    <!-- top -->
-    <a href="#" class="btn-to-top p-3">
+    <a href="#" class="btn-to-top rounded-circle p-3">
         <i class="fa fa-chevron-up"></i>
     </a>
    <!-- end to top -->
