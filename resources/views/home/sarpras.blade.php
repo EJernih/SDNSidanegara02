@@ -26,10 +26,11 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            gap: 20px;
         }
 
         .sarpras-item {
-            width: 50%;
+            width: calc(50% - 20px);
         }
     </style>
   </head>

@@ -66,6 +66,7 @@ Route::resource('ppdbs', PpdbController::class)->middleware('auth');
 
 Route::resource('galeris', GaleriController::class)->middleware('auth');
 Route::resource('filters', FilterController::class)->middleware('auth');
+Route::resource('beritas', BeritaController::class)->middleware('auth');
 
 
 Route::resource('kontaks', KontakController::class);

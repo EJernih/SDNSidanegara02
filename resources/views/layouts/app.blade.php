@@ -145,12 +145,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <p>Data Prestasi</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="/ekskuls" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Ekstrakulikuler</p>
-                </a>
-              </li>
               
             </ul>
           </li>

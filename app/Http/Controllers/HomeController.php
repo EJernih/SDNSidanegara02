@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Berita;
 use App\Models\Galeri;
+use App\Models\Filter;
 use App\Models\Kontak;
 use App\Models\Ppdb;
 use App\Models\Prestasi;
@@ -36,7 +37,7 @@ class HomeController extends Controller
     public function galeri()
     {
         $galeris = Galeri::all();
-        $filters = Galeri::select('filter_id as item')->distinct()->get();
+        $filters = Filter::select('id as item')->distinct()->get();
 
         return view('home.galeri', compact('galeris','filters'));
     }

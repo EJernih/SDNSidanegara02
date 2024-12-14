@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-    @can('create-tulisan', $post)
+    @can('create-tulisan')
     <a href="/sliders/create" class="btn btn-primary mb-3">Tambah Data</a>
     @endcan
     
