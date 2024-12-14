@@ -43,7 +43,7 @@
     <!-- End Breadcrumbs -->
 
     <!-- Detail Berita -->
-    <div class="container mt-5">
+    <div class="container mt-5 pb-5">
       @if($berita) <!-- Validasi bahwa $berita tidak null -->
       <div class="row">
         <div class="col-md-8 offset-md-2">
@@ -79,18 +79,18 @@
     @include('partials.footer')
     <!-- end footer -->
 
-   <!-- top -->
-    <a href="#" class="btn-to-top rounded-circle p-3">
-        <i class="fa fa-chevron-up"></i>
-    </a>
-   <!-- end to top -->
+
 
     <script src="{('assets/vendor/jquery/jquery-3.7.1.min.js')}"></script>
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/fontawesome/js/all.min.js"></script>
-    <script src="assets/vendor/mansory/masonry.pkgd.min.js"></script>
-    <script src="assets/vendor/aos/dist/aos.js"></script>
-    <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="{('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js')}"></script>
+    <script src="{('assets/vendor/fontawesome/js/all.min.js')}"></script>
+    <script src="{('assets/vendor/mansory/masonry.pkgd.min.js')}"></script>
+    <script src="{('assets/vendor/aos/dist/aos.js')}"></script>
+    <script src="{('assets/vendor/isotope/isotope.pkgd.min.js')}"></script>
+    <script src="{('assets/js/app.js')}"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
   </body>
 </html>

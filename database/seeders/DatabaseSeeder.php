@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
 
 
         $this->call([
+            AkunSeeder::class,
             BeritaSeeder::class,
             FilterSeeder::class,
             GaleriSeeder::class,
@@ -38,6 +39,7 @@ class DatabaseSeeder extends Seeder
             VisiMisiSeeder::class,
             UserSeeder::class,
             RolePermissionSeeder::class,
+            RoleSeeder::class,
         ]);
     }
 }

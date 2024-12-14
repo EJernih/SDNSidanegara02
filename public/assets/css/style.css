@@ -76,17 +76,28 @@ a {
   color: #a00001;
 }
 
-.btn-subscribe,
+/* .btn-subscribe,
 .btn-to-top {
   background: #a00001;
   color: white;
-}
+} */
 
 .btn-to-top {
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  right: 15px;
-  bottom: 15px;
+  right: 30px;
+  bottom: 30px;
+  text-decoration: none;
+  background: #a00001;
+  color: white;
+  border-radius: 50%; /* Membuat elemen berbentuk bulat */
+  width: 50px; /* Ukuran lebar */
+  height: 50px; /* Ukuran tinggi sama dengan lebar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Opsional: Menambahkan bayangan */
+  transition: background-color 0.3s ease; /* Animasi hover */
+  padding: 0; /* Pastikan padding tidak memengaruhi ukuran tombol */
 }
 
 .bg-darker {

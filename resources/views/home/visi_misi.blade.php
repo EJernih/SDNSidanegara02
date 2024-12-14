@@ -86,11 +86,7 @@
     @include('partials.footer')
     <!-- end footer -->
 
-   <!-- top -->
-    <a href="#" class="btn-to-top rounded-circle p-3">
-        <i class="fa fa-chevron-up"></i>
-    </a>
-   <!-- end to top -->
+
 
     <script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -125,3 +125,8 @@
     </footer>
 
     <!-- end footer -->
+
+        <!-- Tombol Scroll to Top -->
+    <a href="#" class="btn-to-top" id="btn-to-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>

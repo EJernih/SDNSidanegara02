@@ -25,11 +25,11 @@ Route::get('/about', [HomeController::class, 'about']);
 Route::get('/galeri', [HomeController::class, 'galeri']);
 Route::get('/kontak', [HomeController::class, 'kontak']);
 Route::get('/ppdb', [HomeController::class, 'ppdb']);
-Route::get('/prestasi', [HomeController::class, 'prestasi']);
-Route::get('/tendik', [HomeController::class, 'tendik']);
-Route::get('/tentang_sekolah', [HomeController::class, 'tentang_sekolah']);
-Route::get('/visi_misi', [HomeController::class, 'visi_misi']);
-Route::get('/sarpras', [HomeController::class, 'sarpras']);
+Route::get('/prestasi', [HomeController::class, 'prestasi'])->name('prestasi');
+Route::get('/tendik', [HomeController::class, 'tendik'])->name('tendik');
+Route::get('/tentang_sekolah', [HomeController::class, 'tentang_sekolah'])->name('tentang_sekolah');
+Route::get('/visi_misi', [HomeController::class, 'visi_misi'])->name('visi_misi');
+Route::get('/sarpras', [HomeController::class, 'sarpras'])->name('sarpras');
 Route::get('/berita', [HomeController::class, 'berita']);
 Route::get('/detailberita/{id}', [HomeController::class, 'berita_detail'])->name('berita.show');
 Route::get('/tentang_sekolah/{id}', [SambutanController::class, 'show'])->name('tentang_sekolah');
@@ -60,7 +60,7 @@ Route::resource('sarprasS', SarpraController::class)->middleware('auth');
 Route::resource('prestasis', PrestasiController::class)->middleware('auth');
 
 Route::get('ekskul', function () {
-    return redirect('/#ekskul');});
+    return redirect('/#ekskul');})->name('ekskul');
 
 Route::resource('ppdbs', PpdbController::class)->middleware('auth');
 
@@ -71,6 +71,8 @@ Route::resource('filters', FilterController::class)->middleware('auth');
 Route::resource('kontaks', KontakController::class);
 
 Route::resource('akuns', AkunController::class)->middleware('auth');
+Route::post('/akuns', [AkunController::class, 'store'])->middleware('auth');
+
 
 
 //route role

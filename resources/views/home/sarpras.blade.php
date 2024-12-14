@@ -71,9 +71,9 @@
                   <div class="mt-4 sarpras-item" data-aos="fade-right">
                       <div class="card border-0 shadow">
                           <div class="card-body testimonial-item">
-            @if (isset($sarpra->image))
-            <img src="{{asset ('image/sarpra/'. $sarpra->image)}}" class="img-testimonial float-start me-3" alt="{{ $sarpra->name }}">
-            @endif
+                                @if (isset($sarpra->image))
+                                <img src="{{asset ('image/sarpras/'. $sarpra->image)}}" class="img-testimonial float-start me-3" alt="{{ $sarpra->name }}">
+                                @endif
                               <strong class="d-block">{{ $sarpra->judul }} {{ $sarpra->name }}</strong>
                               <smal class="text-muted">{{ $sarpra->jumlah }}</smal>
                               <p class="fst-italic mt-3 fs-5">
@@ -97,11 +97,8 @@
     @include('partials.footer')
     <!-- end footer -->
 
-   <!-- top -->
-    <a href="#" class="btn-to-top rounded-circle p-3">
-        <i class="fa fa-chevron-up"></i>
-    </a>
-   <!-- end to top -->
+
+
 
     <script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
