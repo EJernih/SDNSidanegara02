@@ -76,8 +76,14 @@ class FilterController extends Controller
      */
     public function destroy(Filter $filter)
     {
-        $filter->delete();
+        //menemukan filter berdasarkan id
+        $filter = Filter::findOrfail($filter->id);
 
+        //membuat filter_id di galeri menjadi null
+        Galeri::where('filter_id', $filter->id)->update(['filter_id' => null]);
+
+        //menghapus filter
+        $filter->delete();
         return redirect('/filters')->with('message', 'Data berhasil dihapus');
     }
 }

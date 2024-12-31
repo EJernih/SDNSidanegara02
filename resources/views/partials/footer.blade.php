@@ -18,7 +18,7 @@
               <h4 class="fw-bold">Info Sekolah</h2>
               <ul class="list-group list-unstyled">
                 <li class="list-item">
-                  <a href="/profil" class="text-decoration-none text-black">
+                  <a href="/tentang_sekolah" class="text-decoration-none text-black">
                     <i class="fa-solid fa-chevron-right primary"></i>
                     Profil
                   </a>

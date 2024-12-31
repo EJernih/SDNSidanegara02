@@ -31,7 +31,7 @@ class VisiMisiController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'visi' => 'required',
+            'visi' => 'nullable',
             'misi' => 'required',
         ]);
 
@@ -64,7 +64,7 @@ class VisiMisiController extends Controller
     public function update(Request $request, visimisi $visimisi)
     {
         $request->validate([
-            'visi' => 'required',
+            'visi' => 'nullable',
            'misi' => 'required',
         ]);
 

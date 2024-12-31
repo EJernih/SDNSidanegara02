@@ -69,7 +69,7 @@
                           <h5 class="card-title">{{ $prestasi->title }}</h5>
                           <p class="card-text "><i class="fa-solid fa-calendar-days me-3"></i>{{ $prestasi->date }}</p>
                           <hr>
-                          <p class="card-text"><small class="text-body-secondary">{{ $prestasi->description }}</small></p>
+                          <p class="card-text fs-5"><small class="text-body-secondary">{{ $prestasi->description }}</small></p>
                         </div>
                       </div>
                     </div>
@@ -77,7 +77,6 @@
                     </div>
                 </div>
                   @endforeach
-
               </div>
             </div>
           </div>

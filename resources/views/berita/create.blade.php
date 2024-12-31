@@ -8,7 +8,7 @@
     <a href="/beritas" class="btn btn-primary mb-3">Kembali</a>
     <div class="row">
         <div class="col-md-12">
-            <form action="{{ route ('beritas.store') }}" method="POST" enctype="multipart/form-data">
+            <form id="beritaForm" action="{{ route('beritas.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
 
                 @error('title')
@@ -29,7 +29,7 @@
                     <textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Deskripsi"></textarea>
                 </div>
                  
-                 @error('image')
+                @error('image')
                 <small style="color: red">{{$message}}</small>   
                 @enderror
                 <div class="form-group">
@@ -38,24 +38,48 @@
                 </div>
                 
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    <button type="button" id="submitButton" class="btn btn-primary btn-block">Submit</button>
                 </div>
             </form>
         </div>
     </div>
-    
 </div>
 
- <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            new EasyMDE({ element: document.querySelector("textarea[name='description']") });
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Initialize EasyMDE
+        new EasyMDE({ element: document.querySelector("textarea[name='description']") });
+
+        // SweetAlert2 Confirmation
+        const form = document.getElementById('beritaForm');
+        const submitButton = document.getElementById('submitButton');
+
+        submitButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // SweetAlert2 Confirmation
+            Swal.fire({
+                title: 'Apakah Anda yakin ingin menambah data ini?',
+                text: "Data yang dimasukan akan disimpan",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya, tambah!',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    form.submit(); // Submit the form if confirmed
+                }
+            });
         });
-    </script>
-    
+    });
+</script>
+
 @endsection
 
 @section('head')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
     <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 @endsection
-

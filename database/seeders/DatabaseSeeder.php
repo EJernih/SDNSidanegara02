@@ -32,14 +32,15 @@ class DatabaseSeeder extends Seeder
             KontakSeeder::class,
             PpdbSeeder::class,
             PrestasiSeeder::class,
+            RolePermissionSeeder::class,
+            RoleSeeder::class,
             SambutanSeeder::class,
             SarpraSeeder::class,
             SliderSeeder::class,
             TendikSeeder::class,
             VisiMisiSeeder::class,
             UserSeeder::class,
-            RolePermissionSeeder::class,
-            RoleSeeder::class,
+
         ]);
     }
 }

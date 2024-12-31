@@ -63,8 +63,12 @@
 
         <div class="row">
           <!-- /.col -->
-          <div class="col-12">
+          <div class="col-12  mb-3">
             <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          </div>
+          <!-- /.col -->
+          <div class="col-12">
+            <a href="/" type="submit" class="btn btn-secondary btn-block">Back To Website</a>
           </div>
           <!-- /.col -->
         </div>

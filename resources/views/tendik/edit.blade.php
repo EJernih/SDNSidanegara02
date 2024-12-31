@@ -8,7 +8,7 @@
     <a href="/tendiks" class="btn btn-primary mb-3">Kembali</a>
     <div class="row">
         <div class="col-md-12">
-            <form action="{{ route ('tendiks.update', $tendik->id) }}" method="POST" enctype="multipart/form-data">
+            <form id="tendikForm" action="{{ route ('tendiks.update', $tendik->id) }}" method="POST" enctype="multipart/form-data">
                 @method('PUT')
                 @csrf
 
@@ -40,12 +40,41 @@
                 </div>
                 
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    <button type="button" id="submitBtn" class="btn btn-primary btn-block">Submit</button>
                 </div>
             </form>
         </div>
     </div>
-    
 </div>
-    
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Menambahkan event listener untuk tombol submit
+        document.getElementById('submitBtn').addEventListener('click', function(event) {
+            event.preventDefault();  // Mencegah form untuk langsung disubmit
+            
+            // Menampilkan SweetAlert2 untuk konfirmasi
+            Swal.fire({
+                title: 'Apakah Anda yakin ingin mengubah data ini?',
+                text: "Data yang dimasukan akan disimpan",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya, ubah!',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Jika pengguna mengonfirmasi, submit form
+                    document.getElementById('tendikForm').submit();
+                }
+            });
+        });
+    });
+</script>
+
+@endsection
+
+@section('head')
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 @endsection

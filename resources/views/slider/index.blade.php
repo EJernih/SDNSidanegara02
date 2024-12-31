@@ -31,7 +31,7 @@
                 @php
                     $i = 1
                 @endphp
-                @foreach ($sliders->sortBy('id') as $slider)  {{-- Ubah sortByDescending menjadi sortBy --}}
+                @foreach ($sliders->sortBy('id') as $slider)
                     <tr>
                         <td>{{ $i++ }}</td>
                         <td>{{ $slider->title }}</td>
@@ -41,10 +41,10 @@
                         </td>
                         <td>
                             <a href="{{route('sliders.edit', $slider->id)}}" class="btn btn-warning">Edit</a>
-                            <form action="{{route('sliders.destroy', $slider->id)}}" method="POST" style="display:inline-block;">
+                            <form id="deleteForm{{$slider->id}}" action="{{route('sliders.destroy', $slider->id)}}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Hapus</button>
+                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{$slider->id}})">Hapus</button>
                             </form>
                         </td>
                     </tr>
@@ -53,5 +53,26 @@
         </table>
     </div>
 </div>
-    
+
+<script>
+    // Fungsi untuk konfirmasi penghapusan
+    function confirmDelete(sliderId) {
+        Swal.fire({
+            title: 'Apakah Anda yakin ingin menghapus data ini?',
+            text: "Data yang dihapus tidak bisa dikembalikan.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!',
+            cancelButtonText: 'Batal'
+}).then((result) => {
+            if (result.isConfirmed) {
+                // Jika pengguna mengonfirmasi, submit form
+                document.getElementById('deleteForm' + sliderId).submit();
+            }
+        });
+    }
+</script>
+
 @endsection

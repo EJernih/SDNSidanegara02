@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Akun;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class AkunController extends Controller
 {
@@ -27,7 +28,7 @@ class AkunController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+ public function store(Request $request)
     {
         $request->validate([
             'username' => 'required',
@@ -36,7 +37,7 @@ class AkunController extends Controller
         ]);
 
         $input = $request->all();
-        $input['password'] = bcrypt($request->password); // Hash password sebelum disimpan
+        
         Akun::create($input);
 
         return redirect('/akuns')->with('message', 'Data berhasil ditambahkan');

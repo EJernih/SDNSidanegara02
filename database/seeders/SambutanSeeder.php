@@ -15,10 +15,10 @@ class SambutanSeeder extends Seeder
     {
         Sambutan::create([
             'id' => '3',
-            'image' => 'sambutan_20241023142455nyPqSskQ.jpg',
-            'description' => 'Selamat datang di website kami, kami adalah sebuah perusahaan yang bergerak di bidang jasa penyedia layanan pendidikan dan pelatihan. Kami menyediakan berbagai macam layanan seperti pendidikan formal, pelatihan, sertifikasi, dan beasiswa. Kami juga menyediakan berbagai macam produk seperti buku, perangkat lunak, dan layanan lainnya. Kami siap melayani anda dengan sepenuh hati.',
-            'created_at'        => now(),
-            'updated_at'        => now(),
+            'image' => 'WhatsApp Image 2024-10-25 at 09.09.20.jpeg',
+            'description' => 'Selamat datang di website resmi SD Negeri Sidanegara 02 Cilacap',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
     }
 }

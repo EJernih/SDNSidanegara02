@@ -7,28 +7,28 @@
 <div class="container">
     
     @if ($message = Session::get('message'))
-      <div class="alert alert-success">
-        <strong>Berhasil</strong>
-        <p>{{$message}}</p>
-    </div>  
+        <div class="alert alert-success">
+            <strong>Berhasil</strong>
+            <p>{{$message}}</p>
+        </div>  
     @endif
     
     <div class="table-responsive">
         <table class="table table-bordered table-hover table-striped">
             <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Judul</th>
-                    <th>Deskripsi</th>
-                    <th>Tanggal Mulai - Tanggal Selesai</th>
-                    <th>Tempat</th>
-                    <th>Syarat 1</th>
-                    <th>Syarat 2</th>
-                    <th>Syarat 3</th>
-                    <th>Syarat 4</th>
-                    <th>Gambar</th>
-                    <th>Link Pendaftaran</th>
-                    <th>Aksi</th>
+                    <th style="width: 5%;">No</th>
+                    <th style="width: 10%;">Judul</th>
+                    <th style="width: 15%;">Deskripsi</th>
+                    <th style="width: 15%;">Tanggal Mulai - Tanggal Selesai</th>
+                    <th style="width: 10%;">Tempat</th>
+                    <th style="width: 10%;">Syarat 1</th>
+                    <th style="width: 10%;">Syarat 2</th>
+                    <th style="width: 10%;">Syarat 3</th>
+                    <th style="width: 10%;">Syarat 4</th>
+                    <th style="width: 10%;">Gambar</th>
+                    <th style="width: 15%;">Link Pendaftaran</th>
+                    <th style="width: 5%;">Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,10 +47,9 @@
                         <td>{{ $ppdb->sk_3 }}</td>
                         <td>{{ $ppdb->sk_4 }}</td>
                         <td>
-                            <img src="/image/ppdb/{{$ppdb->image}}" alt="" class="img-fluid" width="90">
+                            <img src="/image/ppdb/{{$ppdb->image}}" alt="" class="img-fluid" style="max-width: 90px;">
                         </td>
                         <td>
-                            <!-- Tombol dinamis untuk daftar -->
                             @if ($ppdb->link)
                                 <a href="{{ $ppdb->link }}" target="_blank" class="btn btn-primary">Daftar Sekarang</a>
                             @else
@@ -66,5 +65,5 @@
         </table>
     </div>
 </div>
-    
+
 @endsection

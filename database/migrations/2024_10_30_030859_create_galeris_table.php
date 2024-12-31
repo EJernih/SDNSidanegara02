@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('galeris', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->unsignedBigInteger('filter_id');
+            $table->unsignedBigInteger('filter_id')->nullable();
             $table->string('image');
             $table->timestamps();
 

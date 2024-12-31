@@ -47,19 +47,26 @@
      <!-- Visi Misi-->
      <div class="Visi Misi bg-light py-5">
             <div class="container">
-              <!-- ini visi -->
-                <div class="title-container">
-                    <h2 class="text-center fw-bold">Visi</h2>
-                </div>
-                
-                <div class="text-center mt-4 d-flex justify-content-center">
-                  <ol class="text-start">
-                    @foreach ($visimisis as $visimisi)
-                    <li>{{ $visimisi->visi }}</li>
-                    @endforeach
-                  </ol>
-                </div>
-              <!-- end visi -->
+<!-- ini visi -->
+<div class="title-container">
+    <h2 class="text-center fw-bold">Visi</h2>
+</div>
+
+<div class="text-center mt-4 d-flex justify-content-center">
+    <ol class="text-start">
+        @foreach ($visimisis as $visimisi)
+            @if($visimisi->visi)
+                <!-- Menampilkan visi dalam bentuk list jika tidak null -->
+                <li>{{ $visimisi->visi }}</li>
+            @else
+                <!-- Jika visi null, tidak menampilkan angka atau list -->
+                <li style="display: none;"></li>
+            @endif
+        @endforeach
+    </ol>
+</div>
+<!-- end visi -->
+
 
               <!-- ini misi -->
                 <div class="title-container">

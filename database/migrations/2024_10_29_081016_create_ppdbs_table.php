@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('sk_3');
             $table->string('sk_4');
             $table->string('image');
-            $table->string('link')->nullable();
+            $table->string('link', 612)->nullable();
             $table->timestamps();
         });
     }

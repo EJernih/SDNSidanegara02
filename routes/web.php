@@ -14,6 +14,7 @@ use App\Http\Controllers\SambutanController;
 use App\Http\Controllers\SarPraController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TendikController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\VisiMisiController;
 use App\Models\Berita;
 use Illuminate\Support\Facades\Route;
@@ -71,8 +72,9 @@ Route::resource('beritas', BeritaController::class)->middleware('auth');
 
 Route::resource('kontaks', KontakController::class);
 
+Route::resource('users', UserController::class)->middleware('auth');
+
 Route::resource('akuns', AkunController::class)->middleware('auth');
-Route::post('/akuns', [AkunController::class, 'store'])->middleware('auth');
 
 
 
@@ -81,6 +83,3 @@ Route::post('/akuns', [AkunController::class, 'store'])->middleware('auth');
 Route::get('SuperAdmin', function () {
     return 'h1>Halo SuperAdmin</h1>';
 })->middleware('auth', 'verified', 'role:SuperAdmin');
-
-
-

@@ -19,9 +19,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Style dan Script EasyMDE -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
-      <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
   
+  <!-- SweetAlert2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 <body class="hold-transition sidebar-mini">
@@ -46,9 +48,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <img src="/lte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">SDN02 CLP</span>
+    <a href="#" class="brand-link">
+      <img src="/lte/dist/img/sd2Logo.jpeg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">SDN 02 Cilacap</span>
     </a>
 
     <!-- Sidebar -->
@@ -66,189 +68,190 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
       
 
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-              <!-- Menu Dashboard -->
-          <li class="nav-item">
-            <a href="/dashboard" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Dashboard
-              </p>
-            </a>
-          </li>
-              <!-- Menu Lihat Website -->
-          <li class="nav-item">
-            <a href="/" target="_blank" class="nav-link">
-              <i class="nav-icon fa-solid fa-arrow-up-right-from-square"></i>
-              <p>
-                 Lihat Website
-              </p>
-            </a>
-          </li>
-              <!-- Menu Halaman Beranda -->
-          <li class="nav-item menu-close">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Halaman Beranda
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/sliders" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Sliders</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-              <!-- Menu Halaman Profil -->
-          <li class="nav-item menu-close">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Halaman Profil
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/sambutans" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Sambutan</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/visimisis" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Visi Misi</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/tendiks" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Tenaga Pendidik</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/sarprasS" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Sarana Prasarana</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/prestasis" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Prestasi</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>
-              <!-- Menu Halaman PPDB -->
-          <li class="nav-item menu-close">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Halaman PPDB
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/ppdbs" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data PPDB</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-              <!-- Menu Halaman Galeri -->
-          <li class="nav-item menu-close">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Halaman Galeri
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/galeris" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Galeri</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/filters" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Filter</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-              <!-- Menu Halaman Berita -->
-          <li class="nav-item menu-close">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Halaman Berita
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/beritas" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Berita</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-              <!-- Menu Halaman Kontak -->
-          <li class="nav-item menu-close">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Halaman Kontak
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/kontaks" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Kontak</p>
-                </a>
-              </li>
-            </ul>
-          </li>
+<!-- Sidebar Menu -->
+<nav class="mt-2">
+  <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+    <!-- Menu Dashboard -->
+    <li class="nav-item">
+      <a href="/dashboard" class="nav-link {{ Request::is('dashboard') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-tachometer-alt"></i>
+        <p>Dashboard</p>
+      </a>
+    </li>
 
+    <!-- Menu Lihat Website -->
+    <li class="nav-item">
+      <a href="/" target="_blank" class="nav-link">
+        <i class="nav-icon fa-solid fa-arrow-up-right-from-square"></i>
+        <p>Lihat Website</p>
+      </a>
+    </li>
 
+    <!-- Menu Halaman Beranda -->
+    <li class="nav-item {{ Request::is('sliders*') ? 'menu-open' : 'menu-close' }}">
+      <a href="#" class="nav-link {{ Request::is('sliders*') ? 'active' : '' }}">
+<i class="fa-solid fa-house"></i>
+        <p>
+          Halaman Beranda
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="/sliders" class="nav-link {{ Request::is('sliders') ? 'active' : '' }}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Data Sliders</p>
+          </a>
+        </li>
+      </ul>
+    </li>
 
-          <li class="nav-item">
-            <a href="/akuns" class="nav-link">
-              <i class="nav-icon fa-solid fa-user"></i>
-              <p>
-                Akun
-              </p>
-            </a>
-          </li>
+    <!-- Menu Halaman Profil -->
+    <li class="nav-item {{ Request::is('sambutans*', 'visimisis*', 'tendiks*', 'sarprasS*', 'prestasis*') ? 'menu-open' : 'menu-close' }}">
+      <a href="#" class="nav-link {{ Request::is('sambutans*', 'visimisis*', 'tendiks*', 'sarprasS*', 'prestasis*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-th"></i>
+        <p>
+          Halaman Profil
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="/sambutans" class="nav-link {{ Request::is('sambutans') ? 'active' : '' }}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Data Sambutan</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/visimisis" class="nav-link {{ Request::is('visimisis') ? 'active' : '' }}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Data Visi Misi</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/tendiks" class="nav-link {{ Request::is('tendiks') ? 'active' : '' }}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Data Tenaga Pendidik</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/sarprasS" class="nav-link {{ Request::is('sarprasS') ? 'active' : '' }}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Data Sarana Prasarana</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/prestasis" class="nav-link {{ Request::is('prestasis') ? 'active' : '' }}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Data Prestasi</p>
+          </a>
+        </li>
+      </ul>
+    </li>
 
-          <li class="nav-item">
-            <a href="/logout" class="nav-link">
-              <i class="nav-icon fa-solid fa-right-from-bracket"></i>
-              <p>
-                Log out
-              </p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
+    <!-- Menu Halaman PPDB -->
+    <li class="nav-item {{ Request::is('ppdbs*') ? 'menu-open' : 'menu-close' }}">
+      <a href="#" class="nav-link {{ Request::is('ppdbs*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-th"></i>
+        <p>
+          Halaman PPDB
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="/ppdbs" class="nav-link {{ Request::is('ppdbs') ? 'active' : '' }}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Data PPDB</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Menu Halaman Galeri -->
+    <li class="nav-item {{ Request::is('galeris*', 'filters*') ? 'menu-open' : 'menu-close' }}">
+      <a href="#" class="nav-link {{ Request::is('galeris*', 'filters*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-th"></i>
+        <p>
+          Halaman Galeri
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="/galeris" class="nav-link {{ Request::is('galeris') ? 'active' : '' }}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Data Galeri</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/filters" class="nav-link {{ Request::is('filters') ? 'active' : '' }}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Data Filter</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Menu Halaman Berita -->
+    <li class="nav-item {{ Request::is('beritas*') ? 'menu-open' : 'menu-close' }}">
+      <a href="#" class="nav-link {{ Request::is('beritas*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-th"></i>
+        <p>
+          Halaman Berita
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="/beritas" class="nav-link {{ Request::is('beritas') ? 'active' : '' }}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Data Berita</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Menu Halaman Kontak -->
+    <li class="nav-item {{ Request::is('kontaks*') ? 'menu-open' : 'menu-close' }}">
+      <a href="#" class="nav-link {{ Request::is('kontaks*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-th"></i>
+        <p>
+          Halaman Kontak
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="/kontaks" class="nav-link {{ Request::is('kontaks') ? 'active' : '' }}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Data Kontak</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Menu Akun (Role SuperAdmin) -->
+    <li class="nav-item">
+      @role('SuperAdmin')
+      <a href="/users" class="nav-link {{ Request::is('users') ? 'active' : '' }}">
+        <i class="nav-icon fa-solid fa-user"></i>
+        <p>Akun</p>
+      </a>
+      @endrole
+    </li>
+
+    <!-- Menu Log Out -->
+    <li class="nav-item">
+      <a href="/logout" class="nav-link">
+        <i class="nav-icon fa-solid fa-right-from-bracket"></i>
+        <p>Log out</p>
+      </a>
+    </li>
+  </ul>
+</nav>
+<!-- /.sidebar-menu -->
+
     </div>
     <!-- /.sidebar -->
   </aside>
@@ -280,7 +283,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
             <div class="card card-primary card-outline">
               <div class="card-header">
-                <h5 class="m-0">@yield('title')</ola5>
+                <h5 class="m-0">@yield('title')</h5>
               </div>
               <div class="card-body">
 

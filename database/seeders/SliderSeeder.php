@@ -13,13 +13,25 @@ class SliderSeeder extends Seeder
      */
     public function run(): void
     {
-        Slider::create([
-            'id' => 1,
-            'title' => 'Welcome to our website',
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent bland',
-            'image' => 'slider_pIw0htx8.jpg',
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
+        $sliders = [
+            [
+                'title' => 'Selamat Datang di SD Negeri Sidanegara 02 Cilacap',
+                'description' => 'SD Negeri Sidanegara 02 Cilacap merupakan salah satu sekolah yang berada di Kecamatan Cilacap Tengah, Kabupaten Cilacap, Jawa Tengah.',
+                'image' => 'WhatsApp Image 2024-10-25 at 08.24.21.jpeg',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'title' => 'Segera daftarkan ananda di SD Negeri Sidanegara 02 Cilacap',
+                'description' => 'Hubungi kami untuk mendapatkan informasi lebih lanjut.',
+                'image' => 'WhatsApp Image 2024-10-25 at 08.26.02.jpeg',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+        ];
+
+        foreach ($sliders as $slider) {
+            Slider::create($slider);
+        }
     }
 }

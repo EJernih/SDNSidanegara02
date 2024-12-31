@@ -37,11 +37,19 @@ class GaleriController extends Controller
 
         $request->validate([
             'title' => 'required',
-            'filter_id' => 'required|integer',
+            'filter_id' => 'nullable|exists:filters,id',
             'image' => 'required|image',
         ]);
 
         $input = $request->all();
+
+        //logika jika filter tidak dipilih
+        $filterId = $request->input('filter_id');
+        if ($filterId) {//jika filter dipilih
+
+        }else{
+            $input['filter_id'] = null;
+        }
 
         if ($image = $request->file('image')) {
             $destinationPath = 'image/galeri/';
@@ -81,11 +89,13 @@ class GaleriController extends Controller
     {
          $request->validate([
             'title' => 'required',
-            'filter_id' => 'required',
+            'filter_id' => 'nullable|exists:filters,id',
             'image' => 'image',
         ]);
 
         $input = $request->all();
+
+
 
         if ($image = $request->file('image')) {
             $destinationPath = 'image/galeri/';

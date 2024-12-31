@@ -8,21 +8,13 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-public function index()
-{
-    $user = Auth::user();
+    public function index()
+    {
 
-    // Pastikan user memiliki role tertentu
-    if ($user->hasRole('SuperAdmin')) {
-        return view('dashboard.superadmin');
+        $user = Auth::user();  // Mendapatkan pengguna yang sedang login
+
+        // Mengirimkan data ke view
+        return view('dashboard.index', compact('user'));
     }
-
-    if ($user->hasRole('Admin')) {
-        return view('dashboard.admin');
-    }
-
-    return redirect('/')->with('error', 'You do not have permission to access this page.');
 }
 
-
-}

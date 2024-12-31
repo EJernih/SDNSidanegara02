@@ -40,10 +40,10 @@
                         <td>
                             <a href="{{ route('beritas.show', $berita->id) }}" class="btn btn-info">Baca Selengkapnya</a>
                             <a href="{{route('beritas.edit', $berita->id)}}" class="btn btn-warning">Edit</a>
-                            <form action="{{route('beritas.destroy', $berita->id)}}" method="POST" style="display:inline-block;">
+                            <form class="delete-form" action="{{route('beritas.destroy', $berita->id)}}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Hapus</button>
+                                <button type="button" class="btn btn-danger delete-button">Hapus</button>
                             </form>
                         </td>
                     </tr>
@@ -52,17 +52,43 @@
         </table>
     </div>
 </div>
-    
- <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            new EasyMDE({ element: document.querySelector("textarea[name='description']") });
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Initialize EasyMDE
+        new EasyMDE({ element: document.querySelector("textarea[name='description']") });
+
+        // SweetAlert2 for Delete Confirmation
+        const deleteButtons = document.querySelectorAll('.delete-button');
+
+        deleteButtons.forEach(button => {
+            button.addEventListener('click', function(event) {
+                const form = this.closest('.delete-form'); // Get the closest form
+
+                // Show SweetAlert confirmation dialog
+                Swal.fire({
+                    title: 'Apakah Anda yakin ingin menghapus data ini?',
+                    text: "Data yang dihapus tidak bisa dikembalikan.",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Ya, hapus!',
+                    cancelButtonText: 'Batal'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        form.submit(); // Submit the form if confirmed
+                    }
+                });
+            });
         });
-    </script>
-    
+    });
+</script>
 
 @endsection
 
 @section('head')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
     <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 @endsection

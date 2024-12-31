@@ -34,10 +34,10 @@
 
                         <td>
                             <a href="{{route('filters.edit', $filter->id)}}" class="btn btn-warning">Edit</a>
-                            <form action="{{route('filters.destroy', $filter->id)}}" method="POST" style="display:inline-block;">
+                            <form id="deleteForm{{$filter->id}}" action="{{route('filters.destroy', $filter->id)}}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Hapus</button>
+                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{$filter->id}})">Hapus</button>
                             </form>
                         </td>
                     </tr>
@@ -46,5 +46,26 @@
         </table>
     </div>
 </div>
-    
+
+<script>
+    // Fungsi untuk konfirmasi penghapusan
+    function confirmDelete(filterId) {
+        Swal.fire({
+            title: 'Apakah Anda yakin ingin menghapus data ini?',
+            text: "Data yang dihapus tidak bisa dikembalikan.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!',
+            cancelButtonText: 'Batal'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Jika pengguna mengonfirmasi, submit form
+                document.getElementById('deleteForm' + filterId).submit();
+            }
+        });
+    }
+</script>
+
 @endsection

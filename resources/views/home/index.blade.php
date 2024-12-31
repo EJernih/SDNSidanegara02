@@ -251,19 +251,25 @@
         <div class="title-container">
           <h2 class="text-center fw-bold">GALERI</h2>
         </div>
-        <div class="row mt-4">
-          <div class="col-md-12 d-flex justify-content-center">
-            <ul class="list-unstyled d-flex galeri-filters">
-              <li data-filter="*" class="py-2 px-4 filter-active text-white">ALL</li>
+<div class="row mt-4">
+  <div class="col-md-12 d-flex justify-content-center">
+    <ul class="list-unstyled d-flex galeri-filters">
+      <li data-filter="*" class="py-2 px-4 filter-active text-white">ALL</li>
 
-              @foreach ($filters as $filter)
-              <li data-filter=".filter-{{$filter->item}}" class="py-2 px-4">
-                {{ucfirst(\App\Models\Filter::find($filter->item)->filter)}}
-              </li>
-              @endforeach
-            </ul>
-          </div>
-        </div>
+      @foreach ($filters as $filter)
+        @php
+          $filterModel = \App\Models\Filter::find($filter->item);
+        @endphp
+        @if ($filterModel)
+          <li data-filter=".filter-{{$filter->item}}" class="py-2 px-4">
+            {{ ucfirst($filterModel->filter) }}
+          </li>
+        @endif
+      @endforeach
+    </ul>
+  </div>
+</div>
+
 
         <div class="row mt-5">
           <div class="col-md-12">
@@ -272,7 +278,10 @@
               @foreach ($galeris as $galeri)
                   
               <div class="mansory-item m-2 galeri-item filter-{{ $galeri->filter_id }}">
-                <img src="{{ asset('image/galeri/'. $galeri->image) }}" alt="{{$galeri->title}}" class="img-fluid" />
+@if (isset($galeri->image))
+    <img src="{{ asset('image/galeri/'. $galeri->image) }}" class="img-fluid" alt="{{ $galeri->title }}">
+@endif
+
               </div>
               @endforeach
              

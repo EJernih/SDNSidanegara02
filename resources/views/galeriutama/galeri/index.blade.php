@@ -33,16 +33,22 @@
                     <tr>
                         <td>{{ $i++ }}</td>
                         <td>{{ $galeri->title }}</td>
-                        <td>{{ $galeri->filter->filter }}</td> {{-- Menampilkan nama filter dari relasi galeri ke filter --}}
+                        <td>
+                            @if ($galeri->filter)
+                                {{ $galeri->filter->filter }}
+                            @else
+                                Tidak Ada Filter
+                            @endif
+                        </td>
                         <td>
                             <img src="/image/galeri/{{$galeri->image}}" alt="" class="img-fluid" width="90">
                         </td>
                         <td>
                             <a href="{{route('galeris.edit', $galeri->id)}}" class="btn btn-warning">Edit</a>
-                            <form action="{{route('galeris.destroy', $galeri->id)}}" method="POST" style="display:inline-block;">
+                            <form id="deleteForm{{$galeri->id}}" action="{{route('galeris.destroy', $galeri->id)}}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Hapus</button>
+                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{$galeri->id}})">Hapus</button>
                             </form>
                         </td>
                     </tr>
@@ -51,5 +57,27 @@
         </table>
     </div>
 </div>
-    
+
+<script>
+    // Fungsi untuk konfirmasi penghapusan
+    function confirmDelete(galeriId) {
+        Swal.fire({
+            title: 'Apakah Anda yakin ingin menghapus data ini?',
+            text: "Data yang dihapus tidak bisa dikembalikan.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!',
+            cancelButtonText: 'Batal'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Jika pengguna mengonfirmasi, submit form
+                document.getElementById('deleteForm' + galeriId).submit();
+            }
+        });
+    }
+</script>
+
 @endsection
+

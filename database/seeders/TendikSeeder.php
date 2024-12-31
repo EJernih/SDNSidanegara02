@@ -15,9 +15,9 @@ class TendikSeeder extends Seeder
     {
         Tendik::create([
             'id' => 3,
-            'nama' => 'Purboyo',
-            'pelajaran' => 'Matematika',
-            'image' => 'tendik_2024103114323226OJZbBx.jpg',
+            'nama' => 'Dwi Handini Susetyaningsih, S.Pd SD',
+            'pelajaran' => 'Kepala Sekolah',
+            'image' => 'WhatsApp Image 2024-10-25 at 09.09.20.jpeg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
