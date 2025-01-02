@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-    <a href="/sarprasS/create" class="btn btn-primary mb-3">Tambah Data</a>
+    <a href="/sarprasS/create" class="btn btn-primary mb-3"><i class="fa-solid fa-plus"></i> Tambah Data</a>
     
     @if ($message = Session::get('message'))
       <div class="alert alert-success">
@@ -40,11 +40,11 @@
                             <img src="/image/sarpras/{{$sarpra->image}}" alt="" class="img-fluid" width="90">
                         </td>
                         <td>
-                            <a href="{{route('sarprasS.edit', $sarpra->id)}}" class="btn btn-warning">Edit</a>
+                            <a href="{{route('sarprasS.edit', $sarpra->id)}}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
                             <form id="deleteForm{{$sarpra->id}}" action="{{route('sarprasS.destroy', $sarpra->id)}}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{$sarpra->id}})">Hapus</button>
+                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{$sarpra->id}})"><i class="fa-solid fa-trash"></i> Hapus</button>
                             </form>
                         </td>
                     </tr>

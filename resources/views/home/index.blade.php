@@ -19,10 +19,10 @@
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <title>SDN02CLP</title>
+    <title>SD Negeri Sidanegara 02</title>
 
     <!-- fav icon di tab, nanti diganti sama logo sekolah -->
-    <link rel="shortcut icon" href="assets/img/Logo_Kemendikbud.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logo.jpeg" type="image/x-icon">
     <!-- fav icon di tab, nanti diganti sama logo sekolah -->
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">

@@ -23,7 +23,12 @@
       <link rel="stylesheet" href="assets/vendor/lightbox2/dist/css/lightbox.min.css">
 
 
-    <title>SDN02CLP</title>
+    <title>SD Negeri Sidanegara 02</title>
+
+    <!-- fav icon di tab, nanti diganti sama logo sekolah -->
+    <link rel="shortcut icon" href="assets/img/logo.jpeg" type="image/x-icon">
+    <!-- fav icon di tab, nanti diganti sama logo sekolah -->
+
   </head>
 
   <body>

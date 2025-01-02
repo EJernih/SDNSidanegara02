@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SDN02CLP</title>
+    <title>SD Negeri Sidanegara 02</title>
+
+    <!-- fav icon di tab, nanti diganti sama logo sekolah -->
+    <link rel="shortcut icon" href="{{ asset('assets/img/logo.jpeg')}}" type="image/x-icon">
+    <!-- fav icon di tab, nanti diganti sama logo sekolah -->
+
 
     <!-- Bootstrap CSS -->
     <link

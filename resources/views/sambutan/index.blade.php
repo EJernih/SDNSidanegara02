@@ -39,7 +39,7 @@
                         </td>
 
                         <td>
-                            <a href="{{route('sambutans.edit', $sambutan->id)}}" class="btn btn-warning">Edit</a>
+                            <a href="{{route('sambutans.edit', $sambutan->id)}}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
 
                         </td>
                     </tr>

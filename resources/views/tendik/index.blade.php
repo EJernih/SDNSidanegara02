@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-    <a href="/tendiks/create" class="btn btn-primary mb-3">Tambah Data</a>
+    <a href="/tendiks/create" class="btn btn-primary mb-3"><i class="fa-solid fa-plus"></i> Tambah Data</a>
     
     @if ($message = Session::get('message'))
       <div class="alert alert-success">
@@ -38,11 +38,11 @@
                             <img src="/image/tendik/{{$tendik->image}}" alt="" class="img-fluid" width="90">
                         </td>
                         <td>
-                            <a href="{{route('tendiks.edit', $tendik->id)}}" class="btn btn-warning">Edit</a>
+                            <a href="{{route('tendiks.edit', $tendik->id)}}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
                             <form id="deleteForm{{$tendik->id}}" action="{{route('tendiks.destroy', $tendik->id)}}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{$tendik->id}})">Hapus</button>
+                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{$tendik->id}})"><i class="fa-solid fa-trash"></i> Hapus</button>
                             </form>
                         </td>
                     </tr>

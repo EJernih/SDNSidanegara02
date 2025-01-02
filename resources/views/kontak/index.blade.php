@@ -36,7 +36,7 @@
                         <td>{{ $kontak->address }}</td>
 
                         <td>
-                            <a href="{{route('kontaks.edit', $kontak->id)}}" class="btn btn-warning">Edit</a>
+                            <a href="{{route('kontaks.edit', $kontak->id)}}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
                         </td>
                     </tr>
                 @endforeach

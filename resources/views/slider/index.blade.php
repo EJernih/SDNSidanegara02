@@ -6,7 +6,7 @@
 
 <div class="container">
     @can('create-tulisan')
-    <a href="/sliders/create" class="btn btn-primary mb-3">Tambah Data</a>
+    <a href="/sliders/create" class="btn btn-primary mb-3"><i class="fa-solid fa-plus"></i> Tambah Data</a>
     @endcan
     
     @if ($message = Session::get('message'))
@@ -40,11 +40,11 @@
                             <img src="/image/slider/{{$slider->image}}" alt="" class="img-fluid" width="90">
                         </td>
                         <td>
-                            <a href="{{route('sliders.edit', $slider->id)}}" class="btn btn-warning">Edit</a>
+                            <a href="{{route('sliders.edit', $slider->id)}}" class="btn btn-warning me-2 mb-2"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
                             <form id="deleteForm{{$slider->id}}" action="{{route('sliders.destroy', $slider->id)}}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{$slider->id}})">Hapus</button>
+                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{$slider->id}})"><i class="fa-solid fa-trash"></i> Hapus</button>
                             </form>
                         </td>
                     </tr>

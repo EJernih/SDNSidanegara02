@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-    <a href="/filters/create" class="btn btn-primary mb-3">Tambah Data</a>
+    <a href="/filters/create" class="btn btn-primary mb-3"><i class="fa-solid fa-plus"></i> Tambah Data</a>
     
     @if ($message = Session::get('message'))
       <div class="alert alert-success">
@@ -33,11 +33,11 @@
                         <td>{{ $filter->filter }}</td>
 
                         <td>
-                            <a href="{{route('filters.edit', $filter->id)}}" class="btn btn-warning">Edit</a>
+                            <a href="{{route('filters.edit', $filter->id)}}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
                             <form id="deleteForm{{$filter->id}}" action="{{route('filters.destroy', $filter->id)}}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{$filter->id}})">Hapus</button>
+                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{$filter->id}})"><i class="fa-solid fa-trash"></i> Hapus</button>
                             </form>
                         </td>
                     </tr>

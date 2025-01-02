@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-    <a href="/galeris/create" class="btn btn-primary mb-3">Tambah Data</a>
+    <a href="/galeris/create" class="btn btn-primary mb-3"><i class="fa-solid fa-plus"></i> Tambah Data</a>
     
     @if ($message = Session::get('message'))
       <div class="alert alert-success">
@@ -44,11 +44,11 @@
                             <img src="/image/galeri/{{$galeri->image}}" alt="" class="img-fluid" width="90">
                         </td>
                         <td>
-                            <a href="{{route('galeris.edit', $galeri->id)}}" class="btn btn-warning">Edit</a>
+                            <a href="{{route('galeris.edit', $galeri->id)}}" class="btn btn-warning"> <i class="fa-solid fa-pen-to-square"></i> Edit</a>
                             <form id="deleteForm{{$galeri->id}}" action="{{route('galeris.destroy', $galeri->id)}}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{$galeri->id}})">Hapus</button>
+                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{$galeri->id}})"><i class="fa-solid fa-trash"></i> Hapus</button>
                             </form>
                         </td>
                     </tr>

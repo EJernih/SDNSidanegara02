@@ -90,7 +90,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Menu Halaman Beranda -->
     <li class="nav-item {{ Request::is('sliders*') ? 'menu-open' : 'menu-close' }}">
       <a href="#" class="nav-link {{ Request::is('sliders*') ? 'active' : '' }}">
-<i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-house"></i>
         <p>
           Halaman Beranda
           <i class="right fas fa-angle-left"></i>
@@ -109,7 +109,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Menu Halaman Profil -->
     <li class="nav-item {{ Request::is('sambutans*', 'visimisis*', 'tendiks*', 'sarprasS*', 'prestasis*') ? 'menu-open' : 'menu-close' }}">
       <a href="#" class="nav-link {{ Request::is('sambutans*', 'visimisis*', 'tendiks*', 'sarprasS*', 'prestasis*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-th"></i>
+          <i class="fa-solid fa-paperclip"></i>
         <p>
           Halaman Profil
           <i class="right fas fa-angle-left"></i>
@@ -152,7 +152,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Menu Halaman PPDB -->
     <li class="nav-item {{ Request::is('ppdbs*') ? 'menu-open' : 'menu-close' }}">
       <a href="#" class="nav-link {{ Request::is('ppdbs*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-th"></i>
+          <i class="fa-solid fa-briefcase"></i>
         <p>
           Halaman PPDB
           <i class="right fas fa-angle-left"></i>
@@ -171,7 +171,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Menu Halaman Galeri -->
     <li class="nav-item {{ Request::is('galeris*', 'filters*') ? 'menu-open' : 'menu-close' }}">
       <a href="#" class="nav-link {{ Request::is('galeris*', 'filters*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-th"></i>
+          <i class="fa-solid fa-camera"></i>
         <p>
           Halaman Galeri
           <i class="right fas fa-angle-left"></i>
@@ -196,7 +196,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Menu Halaman Berita -->
     <li class="nav-item {{ Request::is('beritas*') ? 'menu-open' : 'menu-close' }}">
       <a href="#" class="nav-link {{ Request::is('beritas*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-th"></i>
+          <i class="fa-solid fa-pen"></i>
         <p>
           Halaman Berita
           <i class="right fas fa-angle-left"></i>
@@ -215,7 +215,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Menu Halaman Kontak -->
     <li class="nav-item {{ Request::is('kontaks*') ? 'menu-open' : 'menu-close' }}">
       <a href="#" class="nav-link {{ Request::is('kontaks*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-th"></i>
+          <i class="fa-solid fa-envelope fa"></i>
         <p>
           Halaman Kontak
           <i class="right fas fa-angle-left"></i>

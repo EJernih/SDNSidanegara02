@@ -57,7 +57,7 @@
                             @endif
                         </td>
                         <td>
-                            <a href="{{route('ppdbs.edit', $ppdb->id)}}" class="btn btn-warning">Edit</a>
+                            <a href="{{route('ppdbs.edit', $ppdb->id)}}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
                         </td>
                     </tr>
                 @endforeach

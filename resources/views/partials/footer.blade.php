@@ -17,36 +17,37 @@
             <div class="col-md-2">
               <h4 class="fw-bold">Info Sekolah</h2>
               <ul class="list-group list-unstyled">
-                <li class="list-item">
-                  <a href="/tentang_sekolah" class="text-decoration-none text-black">
-                    <i class="fa-solid fa-chevron-right primary"></i>
-                    Profil
-                  </a>
-                </li>
-                <li class="list-item">
-                  <a href="/ppdb" class="text-decoration-none text-black">
-                    <i class="fa-solid fa-chevron-right primary"></i>
-                    PPDB
-                  </a>
-                </li>
-                <li class="list-item">
-                  <a href="galeri" class="text-decoration-none text-black">
-                    <i class="fa-solid fa-chevron-right primary"></i>
-                    Galeri
-                  </a>
-                </li>
-                <li class="list-item">
-                  <a href="berita" class="text-decoration-none text-black">
-                    <i class="fa-solid fa-chevron-right primary"></i>
-                    Berita
-                  </a>
-                </li>
-                <li class="list-item">
-                  <a href="kontak" class="text-decoration-none text-black">
-                    <i class="fa-solid fa-chevron-right primary"></i>
-                    Kontak
-                  </a>
-                </li>
+<li class="list-item">
+  <a href="{{ url('/tentang_sekolah') }}" class="text-decoration-none text-black">
+    <i class="fa-solid fa-chevron-right primary"></i>
+    Profil
+  </a>
+</li>
+<li class="list-item">
+  <a href="{{ url('/ppdb') }}" class="text-decoration-none text-black">
+    <i class="fa-solid fa-chevron-right primary"></i>
+    PPDB
+  </a>
+</li>
+<li class="list-item">
+  <a href="{{ url('/galeri') }}" class="text-decoration-none text-black">
+    <i class="fa-solid fa-chevron-right primary"></i>
+    Galeri
+  </a>
+</li>
+<li class="list-item">
+  <a href="{{ url('/berita') }}" class="text-decoration-none text-black">
+    <i class="fa-solid fa-chevron-right primary"></i>
+    Berita
+  </a>
+</li>
+<li class="list-item">
+  <a href="{{ url('/kontak') }}" class="text-decoration-none text-black">
+    <i class="fa-solid fa-chevron-right primary"></i>
+    Kontak
+  </a>
+</li>
+
               </ul>
             </div>
             <div class="col-md-2">
@@ -112,7 +113,7 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-5">
                    <div class="copyright">
-                      &copy; Copyright <strong>Company</strong>. All Rights Reseved
+                      &copy; Copyright <strong>sdn02.cilteng</strong>. All Rights Reseved
                     </div>
                     <div class="credits">
                         Designed by Jerniiihh

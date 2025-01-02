@@ -6,7 +6,7 @@
 
 <div class="container">
     @can('create-user')
-    <a href="/users/create" class="btn btn-primary mb-3">Tambah Data</a>
+    <a href="/users/create" class="btn btn-primary mb-3"><i class="fa-solid fa-plus"></i> Tambah Data</a>
     @endcan
 
     @if ($message = Session::get('message'))
@@ -40,14 +40,14 @@
 
                         <td>
                             @can('edit-user')
-                            <a href="{{route('users.edit', $user->id)}}" class="btn btn-warning">Edit</a>
+                            <a href="{{route('users.edit', $user->id)}}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
                             @endcan
 
                             @can('delete-user')     
                             <form id="deleteForm{{$user->id}}" action="{{route('users.destroy', $user->id)}}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{$user->id}})">Hapus</button>
+                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{$user->id}})"><i class="fa-solid fa-trash"></i> Hapus</button>
                             </form>
                             @endcan
                         </td>
